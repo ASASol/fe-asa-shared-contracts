@@ -1,0 +1,20 @@
+{
+    "name": "toast",
+    "version": "1.0.0",
+    "description": "A React toast notification component",
+    "main": "toast.jsx",
+    "keywords": [
+        "react",
+        "toast",
+        "notification",
+        "component"
+    ],
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+        "react": "^18.0.0"
+    },
+    "peerDependencies": {
+        "react": "^18.0.0"
+    }
+}
