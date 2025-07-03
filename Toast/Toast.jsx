@@ -71,3 +71,5 @@ export const Toast = ({ type, message, isVisible, onClose, duration = 3000 }) =>
     </div>
   );
 };
+
+export default Toast;
