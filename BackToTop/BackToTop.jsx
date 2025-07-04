@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import { useTranslation } from '../../shared/i18n';
 
 const BackToTop = ({
   showAfter = 300,
@@ -11,13 +11,17 @@ const BackToTop = ({
   icon = 'chevron',
   customClass = '',
   onClick = null,
-  tooltip = 'Lên đầu trang',
+  tooltip = null, // Will use i18n if null
   smooth = true,
   duration = 500
 }) => {
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+
+  // Use i18n tooltip if not provided
+  const tooltipText = tooltip || t('common.backToTop');
 
   // Theo dõi scroll position
   useEffect(() => {
@@ -247,8 +251,8 @@ const BackToTop = ({
           ${customClass}
           ${isHovered ? 'rotate-6' : 'rotate-0'}
         `}
-        aria-label={tooltip}
-        title={tooltip}
+        aria-label={tooltipText}
+        title={tooltipText}
       >
         {/* Progress Circle */}
         <ProgressCircle />
@@ -279,7 +283,7 @@ const BackToTop = ({
         ${position.includes('bottom') ? 'bottom-8' : 'top-8'}
         ${isHovered ? 'scale-105' : 'scale-100'}
       `}>
-        {tooltip}
+        {tooltipText}
         {/* Tooltip arrow */}
         <div className={`
           absolute w-2 h-2 bg-gradient-to-r from-gray-800 to-gray-900 transform rotate-45
@@ -312,5 +316,5 @@ const BackToTop = ({
     </div>
   );
 };
-export default BackToTop;
 
+export default BackToTop;

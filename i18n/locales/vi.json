@@ -19,6 +19,7 @@
     "auditUserLogsPage": "Xem Log",
     "loadError": "Lỗi tải menu",
     "noMenu": "Không có menu nào",
+    "notLoaded": "Menu chưa được tải",
     "dynamic": {
       "0": "Quản lý vai trò",          
       "1": "Quản lý chức năng",  
@@ -61,7 +62,11 @@
     "yes": "Có",
     "no": "Không",
     "back": "Trở về",
-    "all": "Tất cả"
+    "all": "Tất cả",
+    "backToTop": "Lên đầu trang",
+    "scrollToTop": "Cuộn lên đầu trang",
+    "dataNotUpdated": "Sử dụng dữ liệu hiện tại, một số thông tin có thể chưa được cập nhật",
+    "notLoaded": "Chưa được tải"
   },
   "sidebar": {
     "brandName": "Nhà Hàng SoftWare",
@@ -554,5 +559,14 @@
     "title": "404",
     "message": "Trang không tồn tại",
     "backToHome": "Về trang chủ"
+  },
+  "backToTop": {
+    "tooltip": "Lên đầu trang",
+    "scrollToTop": "Cuộn lên đầu trang",
+    "backToTopButton": "Nút lên đầu trang",
+    "progress": "Tiến độ cuộn",
+    "scrollProgress": "Tiến độ cuộn: {{percent}}%",
+    "scrollingUp": "Đang cuộn lên",
+    "reachedTop": "Đã đến đầu trang"
   }
 }

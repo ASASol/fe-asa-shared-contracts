@@ -21,6 +21,7 @@
     "auditUserLogsPage": "View Logs",
     "loadError": "Menu loading error",
     "noMenu": "No menu available",
+    "notLoaded": "Menu not loaded",
     "dynamic": {
       "0": "Role Management",
       "1": "Function Management",
@@ -63,7 +64,11 @@
     "yes": "Yes",
     "no": "No",
     "back": "Back",
-    "all": "All"
+    "all": "All",
+    "backToTop": "Back to Top",
+    "scrollToTop": "Scroll to Top",
+    "dataNotUpdated": "Using current data, some information may not be updated",
+    "notLoaded": "Not loaded"
   },
   "sidebar": {
     "brandName": "Restaurant Software",
@@ -556,5 +561,14 @@
     "title": "404",
     "message": "Page not found",
     "backToHome": "Back to home"
+  },
+  "backToTop": {
+    "tooltip": "Back to Top",
+    "scrollToTop": "Scroll to Top",
+    "backToTopButton": "Back to Top Button",
+    "progress": "Scroll Progress",
+    "scrollProgress": "Scroll Progress: {{percent}}%",
+    "scrollingUp": "Scrolling up",
+    "reachedTop": "Reached top of page"
   }
 }
