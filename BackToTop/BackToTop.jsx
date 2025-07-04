@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from '../../shared/i18n';
+import { useTranslation } from 'react-i18next';
 
 const BackToTop = ({
   showAfter = 300,
