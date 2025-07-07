@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
 
 const BackToTop = ({
   showAfter = 300,
@@ -11,60 +10,12 @@ const BackToTop = ({
   icon = 'chevron',
   customClass = '',
   onClick = null,
-  tooltip = null, // Will use i18n if null
   smooth = true,
   duration = 500
 }) => {
-  const { t, i18n } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
-
-  // Force re-render when language changes
-  useEffect(() => {
-    // This effect will trigger re-render when language changes
-  }, [i18n.language]);
-
-  // Fix tooltip language issue
-  const getTooltipText = () => {
-    if (tooltip) {
-      return tooltip; // Use provided tooltip
-    }
-    
-    // Get current language - check multiple possible language formats
-    const currentLang = i18n.language || i18n.resolvedLanguage || 'en';
-    console.log('Current language:', currentLang); // Debug log
-    
-    // Fallback translations - handle multiple language codes
-    const fallbackTooltips = {
-      'en': 'Back to Top',
-      'en-US': 'Back to Top',
-      'vi': 'Lên đầu trang',
-      'vi-VN': 'Lên đầu trang',
-      'vn': 'Lên đầu trang'
-    };
-    
-    // Try to get translation from i18n
-    const translatedText = t('common.backToTop');
-    console.log('Translated text:', translatedText); // Debug log
-    
-    // Check if translation is valid (not the key itself and not empty)
-    if (translatedText && 
-        translatedText !== 'common.backToTop' && 
-        translatedText.trim() !== '') {
-      return translatedText;
-    }
-    
-    // Use fallback based on current language
-    const fallback = fallbackTooltips[currentLang] || 
-                    fallbackTooltips[currentLang.split('-')[0]] || 
-                    fallbackTooltips['en'];
-    
-    console.log('Using fallback:', fallback); // Debug log
-    return fallback;
-  };
-
-  const tooltipText = getTooltipText();
 
   // Theo dõi scroll position
   useEffect(() => {
@@ -294,8 +245,6 @@ const BackToTop = ({
           ${customClass}
           ${isHovered ? 'rotate-6' : 'rotate-0'}
         `}
-        aria-label={tooltipText}
-        title={tooltipText}
       >
         {/* Progress Circle */}
         <ProgressCircle />
@@ -314,26 +263,6 @@ const BackToTop = ({
         {/* Ripple effect */}
         <div className="absolute inset-0 rounded-full bg-white/20 scale-0 group-active:scale-110 transition-transform duration-200"></div>
       </button>
-      
-      {/* Enhanced Tooltip */}
-      <div className={`
-        fixed z-40 px-3 py-2 text-xs font-medium text-white 
-        bg-gradient-to-r from-gray-800 to-gray-900 rounded-lg
-        opacity-0 group-hover:opacity-100 transition-all duration-300
-        pointer-events-none whitespace-nowrap
-        shadow-lg border border-gray-600/50 backdrop-blur-sm
-        ${position.includes('right') ? 'right-20' : position.includes('left') ? 'left-20' : 'left-1/2 transform -translate-x-1/2'}
-        ${position.includes('bottom') ? 'bottom-8' : 'top-8'}
-        ${isHovered ? 'scale-105' : 'scale-100'}
-      `}>
-        {tooltipText}
-        {/* Tooltip arrow */}
-        <div className={`
-          absolute w-2 h-2 bg-gradient-to-r from-gray-800 to-gray-900 transform rotate-45
-          ${position.includes('right') ? 'right-2' : position.includes('left') ? 'left-2' : 'left-1/2 transform -translate-x-1/2'}
-          ${position.includes('bottom') ? '-bottom-1' : '-top-1'}
-        `}></div>
-      </div>
 
       {/* Floating particles effect (chỉ hiện khi hover) */}
       {isHovered && variant === 'gradient' && (
