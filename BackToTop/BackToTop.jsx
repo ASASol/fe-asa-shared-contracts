@@ -15,40 +15,13 @@ const BackToTop = ({
   smooth = true,
   duration = 500
 }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [isVisible, setIsVisible] = useState(false);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
-  // Fix tooltip language issue
-  const getTooltipText = () => {
-    if (tooltip) {
-      return tooltip; // Use provided tooltip
-    }
-    
-    // Get current language
-    const currentLang = i18n.language || 'en';
-    
-    // Fallback translations
-    const fallbackTooltips = {
-      'en': 'Back to Top',
-      'vi': 'Lên đầu trang',
-      'vn': 'Lên đầu trang'
-    };
-    
-    // Try to get translation from i18n
-    const translatedText = t('common.backToTop');
-    
-    // If translation is available and not the key itself, use it
-    if (translatedText && translatedText !== 'common.backToTop') {
-      return translatedText;
-    }
-    
-    // Otherwise use fallback based on current language
-    return fallbackTooltips[currentLang] || fallbackTooltips['en'];
-  };
-
-  const tooltipText = getTooltipText();
+  // Use i18n tooltip if not provided
+  const tooltipText = tooltip || t('common.backToTop');
 
   // Theo dõi scroll position
   useEffect(() => {
