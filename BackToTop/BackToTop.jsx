@@ -20,32 +20,48 @@ const BackToTop = ({
   const [scrollProgress, setScrollProgress] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
 
+  // Force re-render when language changes
+  useEffect(() => {
+    // This effect will trigger re-render when language changes
+  }, [i18n.language]);
+
   // Fix tooltip language issue
   const getTooltipText = () => {
     if (tooltip) {
       return tooltip; // Use provided tooltip
     }
     
-    // Get current language
-    const currentLang = i18n.language || 'en';
+    // Get current language - check multiple possible language formats
+    const currentLang = i18n.language || i18n.resolvedLanguage || 'en';
+    console.log('Current language:', currentLang); // Debug log
     
-    // Fallback translations
+    // Fallback translations - handle multiple language codes
     const fallbackTooltips = {
       'en': 'Back to Top',
+      'en-US': 'Back to Top',
       'vi': 'Lên đầu trang',
+      'vi-VN': 'Lên đầu trang',
       'vn': 'Lên đầu trang'
     };
     
     // Try to get translation from i18n
     const translatedText = t('common.backToTop');
+    console.log('Translated text:', translatedText); // Debug log
     
-    // If translation is available and not the key itself, use it
-    if (translatedText && translatedText !== 'common.backToTop') {
+    // Check if translation is valid (not the key itself and not empty)
+    if (translatedText && 
+        translatedText !== 'common.backToTop' && 
+        translatedText.trim() !== '') {
       return translatedText;
     }
     
-    // Otherwise use fallback based on current language
-    return fallbackTooltips[currentLang] || fallbackTooltips['en'];
+    // Use fallback based on current language
+    const fallback = fallbackTooltips[currentLang] || 
+                    fallbackTooltips[currentLang.split('-')[0]] || 
+                    fallbackTooltips['en'];
+    
+    console.log('Using fallback:', fallback); // Debug log
+    return fallback;
   };
 
   const tooltipText = getTooltipText();
