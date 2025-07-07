@@ -25,18 +25,22 @@
     "dynamic": {
       "0": "Role Management",
       "1": "Function Management",
-      "2": "Command Management",
-      "3": "Commands-Functions Assignment",
-      "4": "Sub System Management",
-      "5": "Permission Group Types Management",
+      "2": "Action Management",
+      "3": "Assign Actions to Function",
+      "4": "Subsystem Management",
+      "5": "Permission Group Type Management",
       "6": "Branch Management",
-      "7": "User Permissions Management",
-      "8": "Permission Groups Management",
-      "9": "User Branches Management",
-      "10": "System Logs",
-      "11": "Authorization",
-      "12": "Restaurant Management",
-      "13": "Hotel Management"
+      "7": "User Configuration",
+      "8": "Permission Group Management",
+      "9": "Permission Management",
+      "10": "Permission Group Management",
+      "11": "User-to-Branch Management",
+      "12": "System Log Checking",
+      "13": "Permission Configuration",
+      "14": "Authorization",
+      "15": "Order Management",
+      "16": "Hotel Management",
+      "17": "Configuration"
     }
   },
   "common": {

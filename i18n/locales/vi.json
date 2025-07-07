@@ -28,13 +28,17 @@
       "4": "Quản lý phân hệ",        
       "5": "Quản lý loại nhóm quyền",  
       "6": "Quản lý chi nhánh",     
-      "7": "Quản lý phân quyền",       
+      "7": "Cấu hình người dùng",       
       "8": "Quản lý nhóm quyền",  
-      "9": "Quản lý người dùng vào chi nhánh", 
-      "10": "Check log hệ thống", 
-      "11": "Phân quyền",              
-      "12": "Quản lý đặt món",        
-      "13": "Quản lý khách sạn"        
+      "9": "Quản lý phân quyền", 
+      "10": "Quản lý nhóm quyền", 
+      "11": "Quản lý người dùng vào chi nhánh",              
+      "12": "Check log hệ thống",        
+      "13": "Cấu hình phân quyền",
+      "14": "Phân quyền",
+      "15": "Quản lý đặt món",
+      "16": "Quản lý khách sạn",
+      "17": "Cấu hình"        
     }
   },
   "common": {
