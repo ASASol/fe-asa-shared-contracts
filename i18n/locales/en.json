@@ -596,5 +596,21 @@
     "pleaseEnterDescription": "Please enter the module description",
     "confirmDelete": "Confirm Module Deletion",
     "confirmDeleteMessage": "Are you sure you want to delete the module \"{{name}}\"?"
+  },
+  "userSetting": {
+    "title": "User Settings",
+    "key": "Setting Key",
+    "displayName": "Display Name",
+    "editUserSetting": "Edit Setting",
+    "addNew": "Add New Setting",
+    "searchPlaceholder": "Search by display name...",
+    "addSuccess": "Setting added successfully",
+    "updateSuccess": "Setting updated successfully",
+    "deleteSuccess": "Setting deleted successfully",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete the setting \"{{name}}\"?",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter description",
+    "detailTitle": "User setting details"
   }
 }
