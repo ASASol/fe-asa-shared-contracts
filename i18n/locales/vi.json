@@ -29,7 +29,7 @@
       "5": "Quản lý loại nhóm quyền",  
       "6": "Quản lý chi nhánh",     
       "7": "Cấu hình người dùng",       
-      "8": "Quản lý nhóm quyền",  
+      "8": "Quản lý module",  
       "9": "Quản lý phân quyền", 
       "10": "Quản lý nhóm quyền", 
       "11": "Quản lý người dùng vào chi nhánh",              
@@ -572,5 +572,27 @@
     "scrollProgress": "Tiến độ cuộn: {{percent}}%",
     "scrollingUp": "Đang cuộn lên",
     "reachedTop": "Đã đến đầu trang"
+  },
+  "module": {
+    "title": "Quản lý Module",
+    "addNew": "Thêm mới Module",
+    "editModule": "Chỉnh sửa Module",
+    "name": "Tên Module",
+    "namePlaceholder": "Nhập tên module",
+    "url": "URL",
+    "urlPlaceholder": "Nhập địa chỉ URL",
+    "description": "Mô tả",
+    "descriptionPlaceholder": "Nhập mô tả module",
+    "moduleCode": "Loại Module",
+    "moduleType": "Loại Module",
+    "searchPlaceholder": "Tìm theo tên module...",
+    "addSuccess": "Thêm module thành công",
+    "updateSuccess": "Cập nhật module thành công",
+    "deleteSuccess": "Xóa module thành công",
+    "pleaseEnterName": "Vui lòng nhập tên module",
+    "pleaseEnterUrl": "Vui lòng nhập URL module",
+    "pleaseEnterDescription": "Vui lòng nhập mô tả module",
+    "confirmDelete": "Xác nhận xóa Module",
+    "confirmDeleteMessage": "Bạn có chắc muốn xóa module \"{{name}}\" không?"
   }
 }

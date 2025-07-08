@@ -31,7 +31,7 @@
       "5": "Permission Group Type Management",
       "6": "Branch Management",
       "7": "User Configuration",
-      "8": "Permission Group Management",
+      "8": "Module Management",
       "9": "Permission Management",
       "10": "Permission Group Management",
       "11": "User-to-Branch Management",
@@ -574,5 +574,27 @@
     "scrollProgress": "Scroll Progress: {{percent}}%",
     "scrollingUp": "Scrolling up",
     "reachedTop": "Reached top of page"
+  },
+  "module": {
+    "title": "Module Management",
+    "addNew": "Add New Module",
+    "editModule": "Edit Module",
+    "name": "Module Name",
+    "namePlaceholder": "Enter module name",
+    "url": "URL",
+    "urlPlaceholder": "Enter module URL",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter module description",
+    "moduleCode": "Module Type",
+    "moduleType": "Module Type",
+    "searchPlaceholder": "Search by module name...",
+    "addSuccess": "Module added successfully",
+    "updateSuccess": "Module updated successfully",
+    "deleteSuccess": "Module deleted successfully",
+    "pleaseEnterName": "Please enter the module name",
+    "pleaseEnterUrl": "Please enter the module URL",
+    "pleaseEnterDescription": "Please enter the module description",
+    "confirmDelete": "Confirm Module Deletion",
+    "confirmDeleteMessage": "Are you sure you want to delete the module \"{{name}}\"?"
   }
 }
