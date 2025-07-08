@@ -594,5 +594,21 @@
     "pleaseEnterDescription": "Vui lòng nhập mô tả module",
     "confirmDelete": "Xác nhận xóa Module",
     "confirmDeleteMessage": "Bạn có chắc muốn xóa module \"{{name}}\" không?"
+  },
+  "userSetting": {
+    "title": "Thiết lập người dùng",
+    "key": "Loại thiết lập",
+    "displayName": "Tên hiển thị",
+    "editUserSetting": "Chỉnh sửa thiết lập",
+    "addNew": "Thêm thiết lập mới",
+    "searchPlaceholder": "Tìm theo tên hiển thị...",
+    "addSuccess": "Thêm thiết lập thành công",
+    "updateSuccess": "Cập nhật thiết lập thành công",
+    "deleteSuccess": "Xóa thiết lập thành công",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc muốn xóa thiết lập \"{{name}}\"?",
+    "description": "Mô tả",
+    "descriptionPlaceholder": "Nhập mô tả",
+    "detailTitle": "Chi tiết cấu hình người dùng"
   }
 }
