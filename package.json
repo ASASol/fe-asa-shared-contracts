@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "sideEffects": true,
   "peerDependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
