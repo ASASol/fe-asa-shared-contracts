@@ -1,4 +1,3 @@
-// src/i18n/index.js
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
@@ -9,13 +8,13 @@ import en from './locales/en.js';
 
 const resources = {
   vi: {
-    translation: vi
+    translation: vi,
   },
   en: {
-    translation: en
-  }
+    translation: en,
+  },
 };
-console.log("✅ i18n initialized")
+
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -26,7 +25,7 @@ i18n
 
     detection: {
       order: ['localStorage', 'navigator', 'htmlTag'],
-      caches: ['localStorage']
+      caches: ['localStorage'],
     },
 
     interpolation: {
@@ -35,6 +34,13 @@ i18n
 
     react: {
       useSuspense: false,
-    }
+    },
+  })
+  .then(() => {
+    console.log(' i18n initialized');
+  })
+  .catch((err) => {
+    console.error(' i18n init error:', err);
   });
+
 export default i18n;
