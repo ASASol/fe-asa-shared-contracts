@@ -200,6 +200,53 @@ const en = {
       "testManagement2": "Test Management 2"
     }
   },
+   "emailConfig": {
+    "title": "Email Configuration Management",
+    "searchPlaceholder": "Search email configurations...",
+    
+    // Form labels - Updated to match API
+    "smtpServer": "SMTP Server",
+    "smtpServerPlaceholder": "e.g., smtp.gmail.com",
+    "port": "Port",
+    "portPlaceholder": "e.g., 587",
+    "fromEmail": "From Email",
+    "fromEmailPlaceholder": "e.g., noreply@company.com",
+    "displayName": "Display Name",
+    "displayNamePlaceholder": "e.g., ABC System",
+    "userName": "Username",
+    "userNamePlaceholder": "Enter username",
+    "password": "Password",
+    "passwordPlaceholder": "Enter password",
+    "isDefault": "Default",
+    "default": "Default",
+    "toggleDefault": "Click to toggle default status",
+    "updateDefaultSuccess": "Default status updated successfully",
+    
+    // Actions
+    "addNewEmailConfig": "Add New Email Configuration",
+    "editEmailConfig": "Edit Email Configuration",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete email configuration \"{{name}}\"?",
+    
+    // Messages
+    "addSuccess": "Email configuration added successfully",
+    "updateSuccess": "Email configuration updated successfully",
+    "deleteSuccess": "Email configuration deleted successfully",
+    
+    // Validation messages - Updated
+    "pleaseEnterSmtpServer": "Please enter SMTP server",
+    "pleaseEnterPort": "Please enter port",
+    "pleaseEnterFromEmail": "Please enter from email",
+    "pleaseEnterDisplayName": "Please enter display name",
+    "pleaseEnterUserName": "Please enter username",
+    "pleaseEnterPassword": "Please enter password",
+    "invalidEmailFormat": "Invalid email format",
+    "invalidPortRange": "Port must be between 1 and 65535",
+    
+    // Loading states
+    "loadingEmailConfigs": "Loading email configurations...",
+    "cannotLoadEmailConfigs": "Cannot load email configurations"
+  },
   "permissionGroupTypes": {
     "title": "Permission Group Types List",
     "typeName": "Type Name",

@@ -198,6 +198,53 @@ const vi = {
       "testManagement2": "Quản lý kiểm tra 2"
     }
   },
+  "emailConfig": {
+    "title": "Quản lý Cấu hình Email",
+    "searchPlaceholder": "Tìm kiếm cấu hình email...",
+    
+    // Form labels - Updated to match API
+    "smtpServer": "Máy chủ SMTP",
+    "smtpServerPlaceholder": "Ví dụ: smtp.gmail.com",
+    "port": "Cổng",
+    "portPlaceholder": "Ví dụ: 587",
+    "fromEmail": "Email gửi",
+    "fromEmailPlaceholder": "Ví dụ: noreply@company.com",
+    "displayName": "Tên hiển thị",
+    "displayNamePlaceholder": "Ví dụ: Hệ thống ABC",
+    "userName": "Tên đăng nhập",
+    "userNamePlaceholder": "Nhập tên đăng nhập",
+    "password": "Mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu",
+    "isDefault": "Mặc định",
+    "default": "Mặc định",
+    "toggleDefault": "Click để thay đổi trạng thái mặc định",
+    "updateDefaultSuccess": "Cập nhật trạng thái mặc định thành công",
+    
+    // Actions
+    "addNewEmailConfig": "Thêm cấu hình email mới",
+    "editEmailConfig": "Sửa cấu hình email",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình email \"{{name}}\" không?",
+    
+    // Messages
+    "addSuccess": "Thêm cấu hình email thành công",
+    "updateSuccess": "Cập nhật cấu hình email thành công",
+    "deleteSuccess": "Xóa cấu hình email thành công",
+    
+    // Validation messages - Updated
+    "pleaseEnterSmtpServer": "Vui lòng nhập máy chủ SMTP",
+    "pleaseEnterPort": "Vui lòng nhập cổng",
+    "pleaseEnterFromEmail": "Vui lòng nhập email gửi",
+    "pleaseEnterDisplayName": "Vui lòng nhập tên hiển thị",
+    "pleaseEnterUserName": "Vui lòng nhập tên đăng nhập",
+    "pleaseEnterPassword": "Vui lòng nhập mật khẩu",
+    "invalidEmailFormat": "Định dạng email không hợp lệ",
+    "invalidPortRange": "Cổng phải trong khoảng từ 1 đến 65535",
+    
+    // Loading states
+    "loadingEmailConfigs": "Đang tải danh sách cấu hình email...",
+    "cannotLoadEmailConfigs": "Không thể tải danh sách cấu hình email"
+  },
   "permissionGroupTypes": {
     "title": "Danh sách loại nhóm quyền",
     "typeName": "Tên Loại Nhóm Quyền",
