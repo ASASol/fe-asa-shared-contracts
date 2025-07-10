@@ -15,7 +15,7 @@ const resources = {
     translation: en
   }
 };
-
+console.log("✅ i18n initialized")
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
@@ -37,5 +37,4 @@ i18n
       useSuspense: false,
     }
   });
-
 export default i18n;
