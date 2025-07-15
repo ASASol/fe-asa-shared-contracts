@@ -36,11 +36,18 @@ const en = {
       "10": "Permission Group Management",
       "11": "User-to-Branch Management",
       "12": "System Log Checking",
-      "13": "Permission Configuration",
-      "14": "Authorization",
-      "15": "Order Management",
-      "16": "Hotel Management",
-      "17": "Configuration"
+      "13": "Email Template Management",
+      "14": "Email SMTP Configuration",
+      "15": "Send Email",
+      "16": "Permission Configuration",
+      "17": "Authorization",
+      "18": "Order Management",
+      "19": "Hotel Management",
+      "20": "Configuration",
+      "21": "Email Management",
+      "22": "Customer Management",
+      "23": "Customer List",
+      "24": "System Configuration"
     }
   },
   "common": {

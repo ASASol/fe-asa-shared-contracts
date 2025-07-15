@@ -34,11 +34,18 @@ const vi = {
       "10": "Quản lý nhóm quyền",
       "11": "Quản lý người dùng vào chi nhánh",
       "12": "Check log hệ thống",
-      "13": "Cấu hình phân quyền",
-      "14": "Phân quyền",
-      "15": "Quản lý đặt món",
-      "16": "Quản lý khách sạn",
-      "17": "Cấu hình"
+      "13": "Quản lý Template Email",
+      "14": "Cấu hình Email SMTP",
+      "15": "Gửi Email",
+      "16": "Cấu hình phân quyền",
+      "17": "Phân quyền",
+      "18": "Quản lý đặt món",
+      "19": "Quản lý khách sạn",
+      "20": "Cấu hình",
+      "21": "Quản lý gửi Email",
+      "22": "Quản lý khách hàng",
+      "23": "Danh sách khách hàng",
+      "24": "Cấu hình hệ thống"
     }
   },
   "common": {
