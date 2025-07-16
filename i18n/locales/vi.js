@@ -205,6 +205,53 @@ const vi = {
       "testManagement2": "Quản lý kiểm tra 2"
     }
   },
+  "emailConfig": {
+    "title": "Quản lý Cấu hình Email",
+    "searchPlaceholder": "Tìm kiếm cấu hình email...",
+    
+    // Form labels - Updated to match API
+    "smtpServer": "Máy chủ SMTP",
+    "smtpServerPlaceholder": "Ví dụ: smtp.gmail.com",
+    "port": "Cổng",
+    "portPlaceholder": "Ví dụ: 587",
+    "fromEmail": "Email gửi",
+    "fromEmailPlaceholder": "Ví dụ: noreply@company.com",
+    "displayName": "Tên hiển thị",
+    "displayNamePlaceholder": "Ví dụ: Hệ thống ABC",
+    "userName": "Tên đăng nhập",
+    "userNamePlaceholder": "Nhập tên đăng nhập",
+    "password": "Mật khẩu",
+    "passwordPlaceholder": "Nhập mật khẩu",
+    "isDefault": "Mặc định",
+    "default": "Mặc định",
+    "toggleDefault": "Click để thay đổi trạng thái mặc định",
+    "updateDefaultSuccess": "Cập nhật trạng thái mặc định thành công",
+    
+    // Actions
+    "addNewEmailConfig": "Thêm cấu hình email mới",
+    "editEmailConfig": "Sửa cấu hình email",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình email \"{{name}}\" không?",
+    
+    // Messages
+    "addSuccess": "Thêm cấu hình email thành công",
+    "updateSuccess": "Cập nhật cấu hình email thành công",
+    "deleteSuccess": "Xóa cấu hình email thành công",
+    
+    // Validation messages - Updated
+    "pleaseEnterSmtpServer": "Vui lòng nhập máy chủ SMTP",
+    "pleaseEnterPort": "Vui lòng nhập cổng",
+    "pleaseEnterFromEmail": "Vui lòng nhập email gửi",
+    "pleaseEnterDisplayName": "Vui lòng nhập tên hiển thị",
+    "pleaseEnterUserName": "Vui lòng nhập tên đăng nhập",
+    "pleaseEnterPassword": "Vui lòng nhập mật khẩu",
+    "invalidEmailFormat": "Định dạng email không hợp lệ",
+    "invalidPortRange": "Cổng phải trong khoảng từ 1 đến 65535",
+    
+    // Loading states
+    "loadingEmailConfigs": "Đang tải danh sách cấu hình email...",
+    "cannotLoadEmailConfigs": "Không thể tải danh sách cấu hình email"
+  },
   "permissionGroupTypes": {
     "title": "Danh sách loại nhóm quyền",
     "typeName": "Tên Loại Nhóm Quyền",
@@ -667,8 +714,62 @@ const vi = {
     "readonly_template_name": "Không thể chỉnh sửa tên template",
     "readonly_template_content": "Không thể chỉnh sửa nội dung template",
     "placeholder_usage": "Biến có thể sử dụng:",
-    "error_label": "Lỗi",
+    "error_label": "Lỗi"
+  },
+  "systemSetting": {
+    "title": "Quản lý Cấu hình Hệ thống",
+    "searchPlaceholder": "Tìm kiếm cấu hình hệ thống...",
+    
+    // Form labels
+    "key": "Khóa cấu hình",
+    "keyPlaceholder": "Nhập khóa cấu hình",
+    "value": "Giá trị",
+    "valuePlaceholder": "Nhập giá trị",
+    "selectValue": "Chọn giá trị",
+    "dataType": "Kiểu dữ liệu",
+    "selectDataType": "Chọn kiểu dữ liệu",
+    "string": "Văn bản",
+    "integer": "Số nguyên",
+    "boolean": "Có/Không",
+    "decimal": "Số thập phân",
+    "allowedValues": "Giá trị cho phép",
+    "allowedValuesPlaceholder": "Ví dụ: 0,1 hoặc tùy chọn1,tùy chọn2",
+    "allowedValuesHint": "Các giá trị phân tách bằng dấu phẩy cho dropdown",
+    "description": "Mô tả",
+    "descriptionPlaceholder": "Nhập mô tả",
+    "branchId": "ID Chi nhánh",
+    "branchIdPlaceholder": "Nhập ID chi nhánh (định dạng UUID)",
+    "branchIdHint": "Tùy chọn: Định danh chi nhánh định dạng UUID",
+    "branch": "Chi nhánh",
+    "accessLevel": "Cấp độ truy cập",
+    "selectAccessLevel": "Chọn cấp độ truy cập",
+    "system": "Hệ thống",
+    "admin": "Quản trị",
+    "user": "Người dùng",
+    
+    // Actions
+    "addNewSystemSetting": "Thêm cấu hình hệ thống mới",
+    "editSystemSetting": "Sửa cấu hình hệ thống",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
+    
+    // Messages
+    "addSuccess": "Thêm cấu hình hệ thống thành công",
+    "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
+    "deleteSuccess": "Xóa cấu hình hệ thống thành công",
+    
+    // Validation
+    "pleaseEnterKey": "Vui lòng nhập khóa cấu hình",
+    "pleaseEnterValue": "Vui lòng nhập giá trị",
+    "pleaseSelectDataType": "Vui lòng chọn kiểu dữ liệu",
+    "pleaseEnterDescription": "Vui lòng nhập mô tả",
+    "pleaseSelectAccessLevel": "Vui lòng chọn cấp độ truy cập",
+    "invalidBranchIdFormat": "Định dạng ID chi nhánh không hợp lệ (phải là UUID)",
+    "invalidIntegerValue": "Giá trị số nguyên không hợp lệ", 
+    "invalidDecimalValue": "Giá trị số thập phân không hợp lệ",
+    "invalidBooleanValue": "Giá trị boolean không hợp lệ (phải là 0, 1, true, hoặc false)"
   }
 };
+
 
 export default vi;
