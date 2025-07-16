@@ -207,10 +207,10 @@ const en = {
       "testManagement2": "Test Management 2"
     }
   },
-   "emailConfig": {
+  "emailConfig": {
     "title": "Email Configuration Management",
     "searchPlaceholder": "Search email configurations...",
-    
+
     // Form labels - Updated to match API
     "smtpServer": "SMTP Server",
     "smtpServerPlaceholder": "e.g., smtp.gmail.com",
@@ -228,18 +228,18 @@ const en = {
     "default": "Default",
     "toggleDefault": "Click to toggle default status",
     "updateDefaultSuccess": "Default status updated successfully",
-    
+
     // Actions
     "addNewEmailConfig": "Add New Email Configuration",
     "editEmailConfig": "Edit Email Configuration",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete email configuration \"{{name}}\"?",
-    
+
     // Messages
     "addSuccess": "Email configuration added successfully",
     "updateSuccess": "Email configuration updated successfully",
     "deleteSuccess": "Email configuration deleted successfully",
-    
+
     // Validation messages - Updated
     "pleaseEnterSmtpServer": "Please enter SMTP server",
     "pleaseEnterPort": "Please enter port",
@@ -249,7 +249,7 @@ const en = {
     "pleaseEnterPassword": "Please enter password",
     "invalidEmailFormat": "Invalid email format",
     "invalidPortRange": "Port must be between 1 and 65535",
-    
+
     // Loading states
     "loadingEmailConfigs": "Loading email configurations...",
     "cannotLoadEmailConfigs": "Cannot load email configurations"
@@ -715,12 +715,13 @@ const en = {
     "toast_missing_customer": "Please select at least 1 customer to send.",
     "readonly_template_name": "Template name is read-only",
     "readonly_template_content": "Template content is read-only",
-    "placeholder_usage": "Available placeholders:"
+    "placeholder_usage": "Available placeholders:",
+    "error_label": "Error"
   },
   "systemSetting": {
     "title": "System Settings Management",
     "searchPlaceholder": "Search system settings...",
-    
+
     // Form labels
     "key": "Setting Key",
     "keyPlaceholder": "Enter setting key",
@@ -731,7 +732,7 @@ const en = {
     "selectDataType": "Select data type",
     "string": "Text",
     "integer": "Number",
-    "boolean": "Yes/No", 
+    "boolean": "Yes/No",
     "decimal": "Decimal",
     "allowedValues": "Allowed Values",
     "allowedValuesPlaceholder": "e.g., 0,1 or option1,option2",
@@ -745,30 +746,44 @@ const en = {
     "accessLevel": "Access Level",
     "selectAccessLevel": "Select access level",
     "system": "System",
-    "admin": "Admin", 
+    "admin": "Admin",
     "user": "User",
-    
+
     // Actions
     "addNewSystemSetting": "Add New System Setting",
     "editSystemSetting": "Edit System Setting",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete setting \"{{key}}\"?",
-    
+
     // Messages
     "addSuccess": "System setting added successfully",
-    "updateSuccess": "System setting updated successfully", 
+    "updateSuccess": "System setting updated successfully",
     "deleteSuccess": "System setting deleted successfully",
-    
+
     // Validation
     "pleaseEnterKey": "Please enter setting key",
     "pleaseEnterValue": "Please enter value",
     "pleaseSelectDataType": "Please select data type",
-    "pleaseEnterDescription": "Please enter description", 
+    "pleaseEnterDescription": "Please enter description",
     "pleaseSelectAccessLevel": "Please select access level",
     "invalidBranchIdFormat": "Invalid branch ID format (must be UUID)",
     "invalidIntegerValue": "Invalid integer value",
     "invalidDecimalValue": "Invalid decimal value",
     "invalidBooleanValue": "Invalid boolean value (must be 0, 1, true, or false)"
+  },
+  "emailSend": {
+    "title": "Title",
+    "template": "Email Template",
+    "totalRecipients": "Total Recipients",
+    "sentSuccess": "Success",
+    "sentFailed": "Failed",
+    "sentTime": "Sent Time",
+    "viewDetail": "View Detail",
+    "bulkSend": "Send Bulk Email",
+    "searchPlaceholder": "Search by title...",
+    "dialogTitle": "Sent Email Detail",
+    "noDetail": "No detail found.",
+    "loading": "Loading details..."
   }
 };
 
