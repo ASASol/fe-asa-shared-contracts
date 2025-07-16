@@ -716,6 +716,59 @@ const en = {
     "readonly_template_name": "Template name is read-only",
     "readonly_template_content": "Template content is read-only",
     "placeholder_usage": "Available placeholders:"
+  },
+  "systemSetting": {
+    "title": "System Settings Management",
+    "searchPlaceholder": "Search system settings...",
+    
+    // Form labels
+    "key": "Setting Key",
+    "keyPlaceholder": "Enter setting key",
+    "value": "Value",
+    "valuePlaceholder": "Enter value",
+    "selectValue": "Select value",
+    "dataType": "Data Type",
+    "selectDataType": "Select data type",
+    "string": "Text",
+    "integer": "Number",
+    "boolean": "Yes/No", 
+    "decimal": "Decimal",
+    "allowedValues": "Allowed Values",
+    "allowedValuesPlaceholder": "e.g., 0,1 or option1,option2",
+    "allowedValuesHint": "Comma-separated values for dropdown options",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter description",
+    "branchId": "Branch ID",
+    "branchIdPlaceholder": "Enter branch ID (UUID format)",
+    "branchIdHint": "Optional: UUID format branch identifier",
+    "branch": "Branch",
+    "accessLevel": "Access Level",
+    "selectAccessLevel": "Select access level",
+    "system": "System",
+    "admin": "Admin", 
+    "user": "User",
+    
+    // Actions
+    "addNewSystemSetting": "Add New System Setting",
+    "editSystemSetting": "Edit System Setting",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete setting \"{{key}}\"?",
+    
+    // Messages
+    "addSuccess": "System setting added successfully",
+    "updateSuccess": "System setting updated successfully", 
+    "deleteSuccess": "System setting deleted successfully",
+    
+    // Validation
+    "pleaseEnterKey": "Please enter setting key",
+    "pleaseEnterValue": "Please enter value",
+    "pleaseSelectDataType": "Please select data type",
+    "pleaseEnterDescription": "Please enter description", 
+    "pleaseSelectAccessLevel": "Please select access level",
+    "invalidBranchIdFormat": "Invalid branch ID format (must be UUID)",
+    "invalidIntegerValue": "Invalid integer value",
+    "invalidDecimalValue": "Invalid decimal value",
+    "invalidBooleanValue": "Invalid boolean value (must be 0, 1, true, or false)"
   }
 };
 

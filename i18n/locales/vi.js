@@ -714,7 +714,61 @@ const vi = {
     "readonly_template_name": "Không thể chỉnh sửa tên template",
     "readonly_template_content": "Không thể chỉnh sửa nội dung template",
     "placeholder_usage": "Biến có thể sử dụng:"
+  },
+  "systemSetting": {
+    "title": "Quản lý Cấu hình Hệ thống",
+    "searchPlaceholder": "Tìm kiếm cấu hình hệ thống...",
+    
+    // Form labels
+    "key": "Khóa cấu hình",
+    "keyPlaceholder": "Nhập khóa cấu hình",
+    "value": "Giá trị",
+    "valuePlaceholder": "Nhập giá trị",
+    "selectValue": "Chọn giá trị",
+    "dataType": "Kiểu dữ liệu",
+    "selectDataType": "Chọn kiểu dữ liệu",
+    "string": "Văn bản",
+    "integer": "Số nguyên",
+    "boolean": "Có/Không",
+    "decimal": "Số thập phân",
+    "allowedValues": "Giá trị cho phép",
+    "allowedValuesPlaceholder": "Ví dụ: 0,1 hoặc tùy chọn1,tùy chọn2",
+    "allowedValuesHint": "Các giá trị phân tách bằng dấu phẩy cho dropdown",
+    "description": "Mô tả",
+    "descriptionPlaceholder": "Nhập mô tả",
+    "branchId": "ID Chi nhánh",
+    "branchIdPlaceholder": "Nhập ID chi nhánh (định dạng UUID)",
+    "branchIdHint": "Tùy chọn: Định danh chi nhánh định dạng UUID",
+    "branch": "Chi nhánh",
+    "accessLevel": "Cấp độ truy cập",
+    "selectAccessLevel": "Chọn cấp độ truy cập",
+    "system": "Hệ thống",
+    "admin": "Quản trị",
+    "user": "Người dùng",
+    
+    // Actions
+    "addNewSystemSetting": "Thêm cấu hình hệ thống mới",
+    "editSystemSetting": "Sửa cấu hình hệ thống",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
+    
+    // Messages
+    "addSuccess": "Thêm cấu hình hệ thống thành công",
+    "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
+    "deleteSuccess": "Xóa cấu hình hệ thống thành công",
+    
+    // Validation
+    "pleaseEnterKey": "Vui lòng nhập khóa cấu hình",
+    "pleaseEnterValue": "Vui lòng nhập giá trị",
+    "pleaseSelectDataType": "Vui lòng chọn kiểu dữ liệu",
+    "pleaseEnterDescription": "Vui lòng nhập mô tả",
+    "pleaseSelectAccessLevel": "Vui lòng chọn cấp độ truy cập",
+    "invalidBranchIdFormat": "Định dạng ID chi nhánh không hợp lệ (phải là UUID)",
+    "invalidIntegerValue": "Giá trị số nguyên không hợp lệ", 
+    "invalidDecimalValue": "Giá trị số thập phân không hợp lệ",
+    "invalidBooleanValue": "Giá trị boolean không hợp lệ (phải là 0, 1, true, hoặc false)"
   }
 };
+
 
 export default vi;
