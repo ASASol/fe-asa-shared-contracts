@@ -666,7 +666,8 @@ const vi = {
     "toast_missing_customer": "Vui lòng chọn ít nhất 1 khách hàng để gửi.",
     "readonly_template_name": "Không thể chỉnh sửa tên template",
     "readonly_template_content": "Không thể chỉnh sửa nội dung template",
-    "placeholder_usage": "Biến có thể sử dụng:"
+    "placeholder_usage": "Biến có thể sử dụng:",
+    "error_label": "Lỗi",
   }
 };
 

@@ -668,7 +668,8 @@ const en = {
     "toast_missing_customer": "Please select at least 1 customer to send.",
     "readonly_template_name": "Template name is read-only",
     "readonly_template_content": "Template content is read-only",
-    "placeholder_usage": "Available placeholders:"
+    "placeholder_usage": "Available placeholders:",
+    "error_label": "Error"
   }
 };
 
