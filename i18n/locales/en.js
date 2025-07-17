@@ -210,10 +210,7 @@ const en = {
   "emailConfig": {
     "title": "Email Configuration Management",
     "searchPlaceholder": "Search email configurations...",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Form labels - Updated to match API
     "smtpServer": "SMTP Server",
     "smtpServerPlaceholder": "e.g., smtp.gmail.com",
@@ -231,27 +228,18 @@ const en = {
     "default": "Default",
     "toggleDefault": "Click to toggle default status",
     "updateDefaultSuccess": "Default status updated successfully",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Actions
     "addNewEmailConfig": "Add New Email Configuration",
     "editEmailConfig": "Edit Email Configuration",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete email configuration \"{{name}}\"?",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Messages
     "addSuccess": "Email configuration added successfully",
     "updateSuccess": "Email configuration updated successfully",
     "deleteSuccess": "Email configuration deleted successfully",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Validation messages - Updated
     "pleaseEnterSmtpServer": "Please enter SMTP server",
     "pleaseEnterPort": "Please enter port",
@@ -261,10 +249,7 @@ const en = {
     "pleaseEnterPassword": "Please enter password",
     "invalidEmailFormat": "Invalid email format",
     "invalidPortRange": "Port must be between 1 and 65535",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Loading states
     "loadingEmailConfigs": "Loading email configurations...",
     "cannotLoadEmailConfigs": "Cannot load email configurations"
@@ -740,10 +725,7 @@ const en = {
   "systemSetting": {
     "title": "System Settings Management",
     "searchPlaceholder": "Search system settings...",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Form labels
     "key": "Setting Key",
     "keyPlaceholder": "Enter setting key",
@@ -767,34 +749,21 @@ const en = {
     "branch": "Branch",
     "accessLevel": "Access Level",
     "selectAccessLevel": "Select access level",
-<<<<<<< HEAD
     // "system": "System", // Đã xóa vì không còn trực tiếp ánh xạ tới enum AccessLevel (0,1,2)
     "admin": "Admin",
     "user": "User",
     "superAdmin": "Super Admin", // Đã thêm để ánh xạ tới AccessLevel.SuperAdmin = 2
-=======
-    "system": "System",
-    "admin": "Admin",
-    "user": "User",
-
->>>>>>> main
     // Actions
     "addNewSystemSetting": "Add New System Setting",
     "editSystemSetting": "Edit System Setting",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete setting \"{{key}}\"?",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Messages
     "addSuccess": "System setting added successfully",
     "updateSuccess": "System setting updated successfully",
     "deleteSuccess": "System setting deleted successfully",
-<<<<<<< HEAD
-=======
 
->>>>>>> main
     // Validation
     "pleaseEnterKey": "Please enter setting key",
     "pleaseEnterValue": "Please enter value",
