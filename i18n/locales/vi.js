@@ -718,8 +718,6 @@ const vi = {
   "systemSetting": {
     "title": "Quản lý Cấu hình Hệ thống",
     "searchPlaceholder": "Tìm kiếm cấu hình hệ thống...",
-    
-    // Form labels
     "key": "Khóa cấu hình",
     "keyPlaceholder": "Nhập khóa cấu hình",
     "value": "Giá trị",
@@ -732,8 +730,8 @@ const vi = {
     "boolean": "Có/Không",
     "decimal": "Số thập phân",
     "allowedValues": "Giá trị cho phép",
-    "allowedValuesPlaceholder": "Ví dụ: 0,1 hoặc tùy chọn1,tùy chọn2",
-    "allowedValuesHint": "Các giá trị phân tách bằng dấu phẩy cho dropdown",
+    "allowedValuesPlaceholder": "Ví dụ: 0,1 hoặc option1,option2",
+    "allowedValuesHint": "Các giá trị cách nhau bằng dấu phẩy cho tùy chọn dropdown",
     "description": "Mô tả",
     "descriptionPlaceholder": "Nhập mô tả",
     "branchId": "ID Chi nhánh",
@@ -742,29 +740,23 @@ const vi = {
     "branch": "Chi nhánh",
     "accessLevel": "Cấp độ truy cập",
     "selectAccessLevel": "Chọn cấp độ truy cập",
-    "system": "Hệ thống",
-    "admin": "Quản trị",
+    "admin": "Quản trị viên",
     "user": "Người dùng",
-    
-    // Actions
-    "addNewSystemSetting": "Thêm cấu hình hệ thống mới",
-    "editSystemSetting": "Sửa cấu hình hệ thống",
+    "superAdmin": "Quản trị viên cấp cao",
+    "addNewSystemSetting": "Thêm Cấu hình Hệ thống mới",
+    "editSystemSetting": "Chỉnh sửa Cấu hình Hệ thống",
     "confirmDelete": "Xác nhận xóa",
-    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
-    
-    // Messages
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\"?",
     "addSuccess": "Thêm cấu hình hệ thống thành công",
     "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
     "deleteSuccess": "Xóa cấu hình hệ thống thành công",
-    
-    // Validation
     "pleaseEnterKey": "Vui lòng nhập khóa cấu hình",
     "pleaseEnterValue": "Vui lòng nhập giá trị",
     "pleaseSelectDataType": "Vui lòng chọn kiểu dữ liệu",
     "pleaseEnterDescription": "Vui lòng nhập mô tả",
     "pleaseSelectAccessLevel": "Vui lòng chọn cấp độ truy cập",
     "invalidBranchIdFormat": "Định dạng ID chi nhánh không hợp lệ (phải là UUID)",
-    "invalidIntegerValue": "Giá trị số nguyên không hợp lệ", 
+    "invalidIntegerValue": "Giá trị số nguyên không hợp lệ",
     "invalidDecimalValue": "Giá trị số thập phân không hợp lệ",
     "invalidBooleanValue": "Giá trị boolean không hợp lệ (phải là 0, 1, true, hoặc false)"
   }

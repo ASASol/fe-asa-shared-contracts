@@ -207,10 +207,9 @@ const en = {
       "testManagement2": "Test Management 2"
     }
   },
-   "emailConfig": {
+  "emailConfig": {
     "title": "Email Configuration Management",
     "searchPlaceholder": "Search email configurations...",
-    
     // Form labels - Updated to match API
     "smtpServer": "SMTP Server",
     "smtpServerPlaceholder": "e.g., smtp.gmail.com",
@@ -228,18 +227,15 @@ const en = {
     "default": "Default",
     "toggleDefault": "Click to toggle default status",
     "updateDefaultSuccess": "Default status updated successfully",
-    
     // Actions
     "addNewEmailConfig": "Add New Email Configuration",
     "editEmailConfig": "Edit Email Configuration",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete email configuration \"{{name}}\"?",
-    
     // Messages
     "addSuccess": "Email configuration added successfully",
     "updateSuccess": "Email configuration updated successfully",
     "deleteSuccess": "Email configuration deleted successfully",
-    
     // Validation messages - Updated
     "pleaseEnterSmtpServer": "Please enter SMTP server",
     "pleaseEnterPort": "Please enter port",
@@ -249,7 +245,6 @@ const en = {
     "pleaseEnterPassword": "Please enter password",
     "invalidEmailFormat": "Invalid email format",
     "invalidPortRange": "Port must be between 1 and 65535",
-    
     // Loading states
     "loadingEmailConfigs": "Loading email configurations...",
     "cannotLoadEmailConfigs": "Cannot load email configurations"
@@ -720,7 +715,6 @@ const en = {
   "systemSetting": {
     "title": "System Settings Management",
     "searchPlaceholder": "Search system settings...",
-    
     // Form labels
     "key": "Setting Key",
     "keyPlaceholder": "Enter setting key",
@@ -731,7 +725,7 @@ const en = {
     "selectDataType": "Select data type",
     "string": "Text",
     "integer": "Number",
-    "boolean": "Yes/No", 
+    "boolean": "Yes/No",
     "decimal": "Decimal",
     "allowedValues": "Allowed Values",
     "allowedValuesPlaceholder": "e.g., 0,1 or option1,option2",
@@ -744,26 +738,24 @@ const en = {
     "branch": "Branch",
     "accessLevel": "Access Level",
     "selectAccessLevel": "Select access level",
-    "system": "System",
-    "admin": "Admin", 
+    // "system": "System", // Đã xóa vì không còn trực tiếp ánh xạ tới enum AccessLevel (0,1,2)
+    "admin": "Admin",
     "user": "User",
-    
+    "superAdmin": "Super Admin", // Đã thêm để ánh xạ tới AccessLevel.SuperAdmin = 2
     // Actions
     "addNewSystemSetting": "Add New System Setting",
     "editSystemSetting": "Edit System Setting",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete setting \"{{key}}\"?",
-    
     // Messages
     "addSuccess": "System setting added successfully",
-    "updateSuccess": "System setting updated successfully", 
+    "updateSuccess": "System setting updated successfully",
     "deleteSuccess": "System setting deleted successfully",
-    
     // Validation
     "pleaseEnterKey": "Please enter setting key",
     "pleaseEnterValue": "Please enter value",
     "pleaseSelectDataType": "Please select data type",
-    "pleaseEnterDescription": "Please enter description", 
+    "pleaseEnterDescription": "Please enter description",
     "pleaseSelectAccessLevel": "Please select access level",
     "invalidBranchIdFormat": "Invalid branch ID format (must be UUID)",
     "invalidIntegerValue": "Invalid integer value",
