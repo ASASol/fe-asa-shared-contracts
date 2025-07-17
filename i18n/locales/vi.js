@@ -723,11 +723,8 @@ const vi = {
   "systemSetting": {
     "title": "Quản lý Cấu hình Hệ thống",
     "searchPlaceholder": "Tìm kiếm cấu hình hệ thống...",
-<<<<<<< HEAD
-=======
-
+    
     // Form labels
->>>>>>> main
     "key": "Khóa cấu hình",
     "keyPlaceholder": "Nhập khóa cấu hình",
     "value": "Giá trị",
@@ -752,30 +749,19 @@ const vi = {
     "selectAccessLevel": "Chọn cấp độ truy cập",
     "admin": "Quản trị viên",
     "user": "Người dùng",
-<<<<<<< HEAD
-    "superAdmin": "Quản trị viên cấp cao",
-    "addNewSystemSetting": "Thêm Cấu hình Hệ thống mới",
-    "editSystemSetting": "Chỉnh sửa Cấu hình Hệ thống",
-    "confirmDelete": "Xác nhận xóa",
-    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\"?",
-    "addSuccess": "Thêm cấu hình hệ thống thành công",
-    "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
-    "deleteSuccess": "Xóa cấu hình hệ thống thành công",
-=======
-
+    
     // Actions
     "addNewSystemSetting": "Thêm cấu hình hệ thống mới",
     "editSystemSetting": "Sửa cấu hình hệ thống",
     "confirmDelete": "Xác nhận xóa",
     "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
-
+    
     // Messages
     "addSuccess": "Thêm cấu hình hệ thống thành công",
     "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
     "deleteSuccess": "Xóa cấu hình hệ thống thành công",
-
+    
     // Validation
->>>>>>> main
     "pleaseEnterKey": "Vui lòng nhập khóa cấu hình",
     "pleaseEnterValue": "Vui lòng nhập giá trị",
     "pleaseSelectDataType": "Vui lòng chọn kiểu dữ liệu",
