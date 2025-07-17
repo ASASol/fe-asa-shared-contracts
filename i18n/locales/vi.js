@@ -452,7 +452,9 @@ const vi = {
     "errorOccurred": "Có lỗi xảy ra",
     "backButton": "Trở về",
     "defaultLoadingMessage": "Đang xử lý...",
-    "defaultErrorMessage": "Đã xảy ra lỗi không xác định"
+    "defaultErrorMessage": "Đã xảy ra lỗi không xác định",
+    "fallbackDataUsed": "Sử dụng dữ liệu dự phòng, một số thông tin có thể chưa được cập nhật",
+    "errorOccurred": "Có lỗi xảy ra khi tải dữ liệu"
   },
   "login": {
     "welcomeBack": "Chào mừng trở lại",
@@ -755,7 +757,22 @@ const vi = {
     "editSystemSetting": "Sửa cấu hình hệ thống",
     "confirmDelete": "Xác nhận xóa",
     "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
-
+    "long": "Số nguyên dài",
+    "double": "Số thực",
+    "datetime": "Ngày giờ",
+    "guid": "GUID", 
+    "byte": "Byte",
+    "char": "Ký tự",
+    "float": "Số thực",
+    "superAdmin": "Quản trị cấp cao",
+    "invalidDateTimeValue": "Giá trị ngày giờ không hợp lệ",
+    "invalidGuidValue": "Giá trị GUID không hợp lệ",
+    "invalidCharValue": "Giá trị ký tự không hợp lệ (phải là 1 ký tự)",
+    "valueNotInAllowedValues": "Giá trị không nằm trong danh sách cho phép",
+    "keyCannotBeEdited": "Không thể chỉnh sửa khóa cấu hình",
+    "valueHint": "Nhập giá trị theo kiểu dữ liệu đã chọn",
+    "selectBranch": "Chọn chi nhánh...",
+    "branchHint": "Tùy chọn: Chọn chi nhánh cho cấu hình này",
     // Messages
     "addSuccess": "Thêm cấu hình hệ thống thành công",
     "updateSuccess": "Cập nhật cấu hình hệ thống thành công",

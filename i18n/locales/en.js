@@ -454,7 +454,9 @@ const en = {
     "errorOccurred": "An error occurred",
     "backButton": "Back",
     "defaultLoadingMessage": "Processing...",
-    "defaultErrorMessage": "An unknown error occurred"
+    "defaultErrorMessage": "An unknown error occurred",
+    "fallbackDataUsed": "Using fallback data, some information may not be updated",
+    "errorOccurred": "An error occurred while loading data"
   },
   "login": {
     "welcomeBack": "Welcome back",
@@ -763,7 +765,21 @@ const en = {
     "addSuccess": "System setting added successfully",
     "updateSuccess": "System setting updated successfully",
     "deleteSuccess": "System setting deleted successfully",
-
+    "long": "Long Integer",
+    "double": "Double",
+    "datetime": "Date Time", 
+    "guid": "GUID",
+    "byte": "Byte",
+    "char": "Character",
+    "float": "Float",
+    "invalidDateTimeValue": "Invalid DateTime value",
+    "invalidGuidValue": "Invalid GUID value", 
+    "invalidCharValue": "Invalid character value (must be 1 character)",
+    "valueNotInAllowedValues": "Value is not in allowed values list",
+    "keyCannotBeEdited": "Key cannot be edited",
+    "valueHint": "Enter value according to selected data type",
+    "selectBranch": "Select branch...",
+    "branchHint": "Optional: Select branch for this setting",
     // Validation
     "pleaseEnterKey": "Please enter setting key",
     "pleaseEnterValue": "Please enter value",
