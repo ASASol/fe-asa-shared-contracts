@@ -799,6 +799,19 @@ const en = {
     "select_all": "Select All",
     "deselect_all": "Deselect All",
     "send_email": "Send Email"
+  },
+  "customer": {
+    "title": "Customer List",
+    "searchPlaceholder": "Search by name, email...",
+    "name": "Name",
+    "email": "Email",
+    "phoneNumber": "Phone Number",
+    "status": "Status",
+    "dateOfBirth": "Date of Birth",
+    "active": "Active",
+    "inactive": "Inactive",
+    "noData": "No customer data",
+    "loading": "Loading customers..."
   }
 };
 
