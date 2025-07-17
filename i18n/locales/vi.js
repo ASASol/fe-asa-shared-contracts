@@ -208,7 +208,7 @@ const vi = {
   "emailConfig": {
     "title": "Quản lý Cấu hình Email",
     "searchPlaceholder": "Tìm kiếm cấu hình email...",
-    
+
     // Form labels - Updated to match API
     "smtpServer": "Máy chủ SMTP",
     "smtpServerPlaceholder": "Ví dụ: smtp.gmail.com",
@@ -226,18 +226,18 @@ const vi = {
     "default": "Mặc định",
     "toggleDefault": "Click để thay đổi trạng thái mặc định",
     "updateDefaultSuccess": "Cập nhật trạng thái mặc định thành công",
-    
+
     // Actions
     "addNewEmailConfig": "Thêm cấu hình email mới",
     "editEmailConfig": "Sửa cấu hình email",
     "confirmDelete": "Xác nhận xóa",
     "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình email \"{{name}}\" không?",
-    
+
     // Messages
     "addSuccess": "Thêm cấu hình email thành công",
     "updateSuccess": "Cập nhật cấu hình email thành công",
     "deleteSuccess": "Xóa cấu hình email thành công",
-    
+
     // Validation messages - Updated
     "pleaseEnterSmtpServer": "Vui lòng nhập máy chủ SMTP",
     "pleaseEnterPort": "Vui lòng nhập cổng",
@@ -247,7 +247,7 @@ const vi = {
     "pleaseEnterPassword": "Vui lòng nhập mật khẩu",
     "invalidEmailFormat": "Định dạng email không hợp lệ",
     "invalidPortRange": "Cổng phải trong khoảng từ 1 đến 65535",
-    
+
     // Loading states
     "loadingEmailConfigs": "Đang tải danh sách cấu hình email...",
     "cannotLoadEmailConfigs": "Không thể tải danh sách cấu hình email"
@@ -582,7 +582,11 @@ const vi = {
       "ip": "IP",
       "note": "Mô tả",
       "device": "Thiết bị",
-      "browser": "Trình duyệt"
+      "browser": "Trình duyệt",
+      "permissionChangeTitle": "Chi tiết thay đổi quyền",
+      "permissionName": "Tên quyền",
+      "oldValue": "Giá trị cũ",
+      "newValue": "Giá trị mới"
     },
     "allBranches": "-- Tất cả chi nhánh --",
     "entity": {
@@ -713,11 +717,17 @@ const vi = {
     "toast_missing_customer": "Vui lòng chọn ít nhất 1 khách hàng để gửi.",
     "readonly_template_name": "Không thể chỉnh sửa tên template",
     "readonly_template_content": "Không thể chỉnh sửa nội dung template",
-    "placeholder_usage": "Biến có thể sử dụng:"
+    "placeholder_usage": "Biến có thể sử dụng:",
+    "error_label": "Lỗi"
   },
   "systemSetting": {
     "title": "Quản lý Cấu hình Hệ thống",
     "searchPlaceholder": "Tìm kiếm cấu hình hệ thống...",
+<<<<<<< HEAD
+=======
+
+    // Form labels
+>>>>>>> main
     "key": "Khóa cấu hình",
     "keyPlaceholder": "Nhập khóa cấu hình",
     "value": "Giá trị",
@@ -742,6 +752,7 @@ const vi = {
     "selectAccessLevel": "Chọn cấp độ truy cập",
     "admin": "Quản trị viên",
     "user": "Người dùng",
+<<<<<<< HEAD
     "superAdmin": "Quản trị viên cấp cao",
     "addNewSystemSetting": "Thêm Cấu hình Hệ thống mới",
     "editSystemSetting": "Chỉnh sửa Cấu hình Hệ thống",
@@ -750,6 +761,21 @@ const vi = {
     "addSuccess": "Thêm cấu hình hệ thống thành công",
     "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
     "deleteSuccess": "Xóa cấu hình hệ thống thành công",
+=======
+
+    // Actions
+    "addNewSystemSetting": "Thêm cấu hình hệ thống mới",
+    "editSystemSetting": "Sửa cấu hình hệ thống",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
+
+    // Messages
+    "addSuccess": "Thêm cấu hình hệ thống thành công",
+    "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
+    "deleteSuccess": "Xóa cấu hình hệ thống thành công",
+
+    // Validation
+>>>>>>> main
     "pleaseEnterKey": "Vui lòng nhập khóa cấu hình",
     "pleaseEnterValue": "Vui lòng nhập giá trị",
     "pleaseSelectDataType": "Vui lòng chọn kiểu dữ liệu",
@@ -759,6 +785,31 @@ const vi = {
     "invalidIntegerValue": "Giá trị số nguyên không hợp lệ",
     "invalidDecimalValue": "Giá trị số thập phân không hợp lệ",
     "invalidBooleanValue": "Giá trị boolean không hợp lệ (phải là 0, 1, true, hoặc false)"
+  },
+  "emailSend": {
+    "title": "Tiêu đề",
+    "template": "Mẫu email",
+    "totalRecipients": "Tổng gửi",
+    "sentSuccess": "Thành công",
+    "sentFailed": "Thất bại",
+    "sentTime": "Thời gian gửi",
+    "viewDetail": "Xem chi tiết",
+    "bulkSend": "Gửi email hàng loạt",
+    "searchPlaceholder": "Tìm theo tiêu đề...",
+    "dialogTitle": "Chi tiết email đã gửi",
+    "noDetail": "Không tìm thấy thông tin chi tiết.",
+    "loading": "Đang tải chi tiết...",
+    "cc_customer_list": "Danh sách khách hàng CC",
+    "add_cc_recipient": "Thêm người nhận CC",
+    "select_recipient": "Chọn người nhận",
+    "bulk_send_email": "Gửi email hàng loạt",
+    "search_by_subject": "Tìm theo tiêu đề...",
+    "email_sent_management": "Quản lý email đã gửi",
+    "bcc_customer_list": "Danh sách khách hàng BCC",
+    "add_bcc_recipient": "Thêm người nhận BCC",
+    "select_all": "Chọn tất cả",
+    "deselect_all": "Bỏ chọn tất cả",
+    "send_email": "Gửi Email"
   }
 };
 
