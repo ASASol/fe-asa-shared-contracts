@@ -671,6 +671,49 @@ const vi = {
     "descriptionPlaceholder": "Nhập mô tả",
     "detailTitle": "Chi tiết cấu hình người dùng"
   },
+  "emailTemplate": {
+    "title": "Quản lý Mẫu Email",
+    "searchPlaceholder": "Tìm kiếm mẫu email...",
+    
+    // Form labels
+    "name": "Tên mẫu",
+    "namePlaceholder": "Nhập tên mẫu",
+    "description": "Mô tả",
+    "descriptionPlaceholder": "Nhập mô tả mẫu",
+    "descriptionHint": "Mô tả mục đích sử dụng của mẫu email này",
+    "templateGroup": "Nhóm mẫu",
+    "selectTemplateGroup": "Chọn nhóm mẫu...",
+    "language": "Ngôn ngữ",
+    "selectLanguage": "Chọn ngôn ngữ...",
+    "templateType": "Loại mẫu",
+    "selectTemplateType": "Chọn loại mẫu...",
+    "isDefault": "Mẫu mặc định",
+    
+    // Template Types
+    "systemNotification": "Thông báo hệ thống",
+    "birthday": "Chúc mừng sinh nhật",
+    "emailConfirmation": "Xác nhận email",
+    "customerAccepted": "Chấp nhận khách hàng",
+    "passwordRecovery": "Khôi phục mật khẩu",
+    
+    // Actions
+    "addNewEmailTemplate": "Thêm mẫu email mới",
+    "editEmailTemplate": "Sửa mẫu email",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu email \"{{name}}\" không?",
+    
+    // Messages
+    "addSuccess": "Thêm mẫu email thành công",
+    "updateSuccess": "Cập nhật mẫu email thành công",
+    "deleteSuccess": "Xóa mẫu email thành công",
+    
+    // Validation
+    "pleaseEnterName": "Vui lòng nhập tên mẫu",
+    "pleaseEnterDescription": "Vui lòng nhập mô tả",
+    "pleaseSelectTemplateGroup": "Vui lòng chọn nhóm mẫu",
+    "pleaseSelectLanguage": "Vui lòng chọn ngôn ngữ",
+    "pleaseSelectTemplateType": "Vui lòng chọn loại mẫu"
+  },
   "send_email": {
     "customer_list": "Danh sách khách hàng",
     "add": "Thêm",
