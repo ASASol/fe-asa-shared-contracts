@@ -781,7 +781,17 @@ const vi = {
     "searchPlaceholder": "Tìm theo tiêu đề...",
     "dialogTitle": "Chi tiết email đã gửi",
     "noDetail": "Không tìm thấy thông tin chi tiết.",
-    "loading": "Đang tải chi tiết..."
+    "loading": "Đang tải chi tiết...",
+    "cc_customer_list": "Danh sách khách hàng CC",
+    "add_cc_recipient": "Thêm người nhận CC",
+    "select_recipient": "Chọn người nhận",
+    "bulk_send_email": "Gửi email hàng loạt",
+    "search_by_subject": "Tìm theo tiêu đề...",
+    "email_sent_management": "Quản lý email đã gửi",
+    "bcc_customer_list": "Danh sách khách hàng BCC",
+    "add_bcc_recipient": "Thêm người nhận BCC",
+    "select_all": "Chọn tất cả",
+    "deselect_all": "Bỏ chọn tất cả"
   }
 };
 

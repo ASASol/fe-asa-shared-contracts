@@ -783,7 +783,17 @@ const en = {
     "searchPlaceholder": "Search by title...",
     "dialogTitle": "Sent Email Detail",
     "noDetail": "No detail found.",
-    "loading": "Loading details..."
+    "loading": "Loading details...",
+    "cc_customer_list": "CC Customer List",
+    "add_cc_recipient": "Add CC Recipient",
+    "select_recipient": "Select Recipient",
+    "bulk_send_email": "Bulk Send Email",
+    "search_by_subject": "Search by subject...",
+    "email_sent_management": "Sent Email Management",
+    "bcc_customer_list": "BCC Customer List",
+    "add_bcc_recipient": "Add BCC Recipient",
+    "select_all": "Select All",
+    "deselect_all": "Deselect All"
   }
 };
 

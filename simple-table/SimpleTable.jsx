@@ -10,8 +10,8 @@ const SimpleTable = ({
   columns = [],
   loading = false,
   pagination = null,
-  onPageChange = () => {},
-  onPageSizeChange = () => {},
+  onPageChange = () => { },
+  onPageSizeChange = () => { },
   renderRow = null,
   responsiveBreakpoint = 'sm',
   tableClassName = '',
@@ -53,17 +53,17 @@ const SimpleTable = ({
         <tr>
           <td colSpan={columns.length} className="px-6 py-8 text-center text-gray-500 dark:text-gray-400 transition-colors duration-200">
             <div className="flex flex-col items-center justify-center space-y-2">
-              <svg 
-                className="w-8 h-8 text-gray-300 dark:text-gray-600" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-8 h-8 text-gray-300 dark:text-gray-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2M4 13h2m13-8V4a1 1 0 00-1-1H7a1 1 0 00-1 1v1m13 0H5" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2M4 13h2m13-8V4a1 1 0 00-1-1H7a1 1 0 00-1 1v1m13 0H5"
                 />
               </svg>
               <span>{emptyMessage || t('common.noData')}</span>
@@ -78,11 +78,10 @@ const SimpleTable = ({
         {data.map((item, index) => (
           <tr
             key={item.id || index}
-            className={`transition-colors duration-200 ${
-              zebra && index % 2 === 0
+            className={`transition-colors duration-200 ${zebra && index % 2 === 0
                 ? 'bg-white dark:bg-gray-800'
                 : 'bg-gray-50 dark:bg-gray-750'
-            } hover:bg-gray-100 dark:hover:bg-gray-600`}
+              } hover:bg-gray-100 dark:hover:bg-gray-600`}
           >
             {renderRow(item, index)}
           </tr>
@@ -128,10 +127,10 @@ const SimpleTable = ({
     const renderPageNumbers = () => {
       const pages = [];
       const maxVisiblePages = 5;
-      
+
       let startPage = Math.max(1, currentPage - Math.floor(maxVisiblePages / 2));
       let endPage = Math.min(totalPages, startPage + maxVisiblePages - 1);
-      
+
       if (endPage - startPage + 1 < maxVisiblePages) {
         startPage = Math.max(1, endPage - maxVisiblePages + 1);
       }
@@ -141,11 +140,10 @@ const SimpleTable = ({
           <button
             key={i}
             onClick={() => onPageChange(i)}
-            className={`px-3 py-2 mx-1 text-sm border rounded transition-colors duration-200 ${
-              i === currentPage
+            className={`px-3 py-2 mx-1 text-sm border rounded transition-colors duration-200 ${i === currentPage
                 ? 'bg-blue-500 text-white border-blue-500'
                 : 'bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-300 dark:border-gray-600 hover:bg-gray-50 dark:hover:bg-gray-600'
-            }`}
+              }`}
           >
             {i}
           </button>
@@ -225,8 +223,8 @@ const SimpleTable = ({
           <thead className="bg-gray-50 dark:bg-gray-700">
             <tr>
               {columns.map((col, idx) => (
-                <th 
-                  key={idx} 
+                <th
+                  key={idx}
                   className="px-6 py-3 text-left font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider text-xs"
                 >
                   {col}
@@ -234,7 +232,7 @@ const SimpleTable = ({
               ))}
               {showExtraColumn && (
                 <th className="px-6 py-3 text-left font-semibold text-gray-700 dark:text-gray-200 uppercase tracking-wider text-xs">
-                  Thao tác
+                  {t('common.actions')}
                 </th>
               )}
             </tr>
@@ -292,17 +290,17 @@ const SimpleTable = ({
         ) : (
           <div className="text-center py-8 text-gray-500 dark:text-gray-400">
             <div className="flex flex-col items-center justify-center space-y-2">
-              <svg 
-                className="w-12 h-12 text-gray-300 dark:text-gray-600" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-12 h-12 text-gray-300 dark:text-gray-600"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2M4 13h2m13-8V4a1 1 0 00-1-1H7a1 1 0 00-1 1v1m13 0H5" 
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2M4 13h2m13-8V4a1 1 0 00-1-1H7a1 1 0 00-1 1v1m13 0H5"
                 />
               </svg>
               <span>{emptyMessage}</span>
