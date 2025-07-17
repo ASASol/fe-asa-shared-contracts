@@ -723,7 +723,7 @@ const vi = {
   "systemSetting": {
     "title": "Quản lý Cấu hình Hệ thống",
     "searchPlaceholder": "Tìm kiếm cấu hình hệ thống...",
-    
+
     // Form labels
     "key": "Khóa cấu hình",
     "keyPlaceholder": "Nhập khóa cấu hình",
@@ -749,18 +749,18 @@ const vi = {
     "selectAccessLevel": "Chọn cấp độ truy cập",
     "admin": "Quản trị viên",
     "user": "Người dùng",
-    
+
     // Actions
     "addNewSystemSetting": "Thêm cấu hình hệ thống mới",
     "editSystemSetting": "Sửa cấu hình hệ thống",
     "confirmDelete": "Xác nhận xóa",
     "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình \"{{key}}\" không?",
-    
+
     // Messages
     "addSuccess": "Thêm cấu hình hệ thống thành công",
     "updateSuccess": "Cập nhật cấu hình hệ thống thành công",
     "deleteSuccess": "Xóa cấu hình hệ thống thành công",
-    
+
     // Validation
     "pleaseEnterKey": "Vui lòng nhập khóa cấu hình",
     "pleaseEnterValue": "Vui lòng nhập giá trị",
@@ -796,6 +796,19 @@ const vi = {
     "select_all": "Chọn tất cả",
     "deselect_all": "Bỏ chọn tất cả",
     "send_email": "Gửi Email"
+  },
+  "customer": {
+    "title": "Danh sách khách hàng",
+    "searchPlaceholder": "Tìm theo tên, email...",
+    "name": "Tên",
+    "email": "Email",
+    "phoneNumber": "Số điện thoại",
+    "status": "Trạng thái",
+    "dateOfBirth": "Ngày sinh",
+    "active": "Đang hoạt động",
+    "inactive": "Ngưng hoạt động",
+    "noData": "Không có dữ liệu khách hàng",
+    "loading": "Đang tải khách hàng..."
   }
 };
 
