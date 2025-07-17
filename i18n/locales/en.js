@@ -828,6 +828,25 @@ const en = {
     "inactive": "Inactive",
     "noData": "No customer data",
     "loading": "Loading customers..."
+  },
+  "email_detail": {
+    "total_email": "Total emails",
+    "success": "Success",
+    "failed": "Failed",
+    "sent_time": "Sent time",
+    "email_log_detail": "Email log details",
+    "failed_time": "Failure time:",
+    "cc": "CC:",
+    "bcc": "BCC:",
+    "error": "Error:",
+    "email_body": "Email content:",
+    "template": "Template:",
+    "status": {
+      "pending": "Pending",
+      "success": "Success",
+      "failed": "Failed",
+      "unknown": "Unknown"
+    }
   }
 };
 

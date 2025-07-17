@@ -826,6 +826,25 @@ const vi = {
     "inactive": "Ngưng hoạt động",
     "noData": "Không có dữ liệu khách hàng",
     "loading": "Đang tải khách hàng..."
+  },
+  "email_detail": {
+    "total_email": "Tổng email",
+    "success": "Thành công",
+    "failed": "Thất bại",
+    "sent_time": "Thời gian gửi",
+    "email_log_detail": "Chi tiết email logs",
+    "failed_time": "Thời gian thất bại:",
+    "cc": "CC:",
+    "bcc": "BCC:",
+    "error": "Lỗi:",
+    "email_body": "Nội dung email:",
+    "template": "Template:",
+    "status": {
+      "pending": "Đang chờ",
+      "success": "Thành công",
+      "failed": "Thất bại",
+      "unknown": "Không xác định"
+    }
   }
 };
 
