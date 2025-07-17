@@ -582,7 +582,11 @@ const vi = {
       "ip": "IP",
       "note": "Mô tả",
       "device": "Thiết bị",
-      "browser": "Trình duyệt"
+      "browser": "Trình duyệt",
+      "permissionChangeTitle": "Chi tiết thay đổi quyền",
+      "permissionName": "Tên quyền",
+      "oldValue": "Giá trị cũ",
+      "newValue": "Giá trị mới"
     },
     "allBranches": "-- Tất cả chi nhánh --",
     "entity": {
@@ -791,7 +795,8 @@ const vi = {
     "bcc_customer_list": "Danh sách khách hàng BCC",
     "add_bcc_recipient": "Thêm người nhận BCC",
     "select_all": "Chọn tất cả",
-    "deselect_all": "Bỏ chọn tất cả"
+    "deselect_all": "Bỏ chọn tất cả",
+    "send_email": "Gửi Email"
   }
 };
 

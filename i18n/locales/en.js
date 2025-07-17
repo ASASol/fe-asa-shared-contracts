@@ -584,7 +584,11 @@ const en = {
       "ip": "IP",
       "note": "Description",
       "device": "Device",
-      "browser": "Browser"
+      "browser": "Browser",
+      "permissionChangeTitle": "Permission Change Details",
+      "permissionName": "Permission Name",
+      "oldValue": "Old Value",
+      "newValue": "New Value"
     },
     "allBranches": "-- All branches --",
     "entity": {
@@ -793,7 +797,8 @@ const en = {
     "bcc_customer_list": "BCC Customer List",
     "add_bcc_recipient": "Add BCC Recipient",
     "select_all": "Select All",
-    "deselect_all": "Deselect All"
+    "deselect_all": "Deselect All",
+    "send_email": "Send Email"
   }
 };
 
