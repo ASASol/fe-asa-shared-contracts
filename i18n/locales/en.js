@@ -870,7 +870,10 @@ const en = {
     "active": "Active",
     "inactive": "Inactive",
     "noData": "No customer data",
-    "loading": "Loading customers..."
+    "loading": "Loading customers...",
+    "activate": "Activate",
+    "confirmActivate": "Are you sure you want to activate the account \"{{name}}\"?",
+    "confirmActivateTitle": "Confirm Activation"
   },
   "email_detail": {
     "total_email": "Total emails",
@@ -884,6 +887,7 @@ const en = {
     "error": "Error:",
     "email_body": "Email content:",
     "template": "Template:",
+    "confirm_email": "Confirm Email",
     "status": {
       "pending": "Pending",
       "success": "Success",
