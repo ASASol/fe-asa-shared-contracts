@@ -7,18 +7,18 @@ import { useTranslation } from 'react-i18next';
  */
 const SimpleTable = ({
   data = [],
-  columns = [],
+  columns = [], // columns bây giờ phải là một mảng các chuỗi (tên cột)
   loading = false,
   pagination = null,
   onPageChange = () => { },
   onPageSizeChange = () => { },
-  renderRow = null,
+  renderRow = null, // Hàm renderRow sẽ chịu trách nhiệm render từng <td>
   responsiveBreakpoint = 'sm',
   tableClassName = '',
   containerClassName = '',
   emptyMessage = 'Không có dữ liệu',
   loadingMessage = 'Đang tải...',
-  showExtraColumn = true,
+  showExtraColumn = true, // Cột 'Actions' mặc định
   zebra = true,
   renderMobileCard = null // Add support for custom mobile card rendering
 }) => {
@@ -26,11 +26,11 @@ const SimpleTable = ({
 
   // DataTable Component - Using your existing pattern
   const DataTable = ({
-    columns,
+    columns, // columns ở đây vẫn là mảng các chuỗi
     data,
     loading,
     emptyMessage,
-    renderRow,
+    renderRow, // renderRow là hàm được truyền từ SimpleTable
     currentPage = 1,
     pageSize = 10,
     zebra = true
@@ -38,7 +38,7 @@ const SimpleTable = ({
     if (loading) {
       return (
         <tr>
-          <td colSpan={columns.length} className="px-6 py-8 text-center">
+          <td colSpan={columns.length + (showExtraColumn ? 1 : 0)} className="px-6 py-8 text-center">
             <div className="flex items-center justify-center space-x-2">
               <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-blue-600"></div>
               <span className="text-gray-500 dark:text-gray-400">{loadingMessage}</span>
@@ -51,7 +51,7 @@ const SimpleTable = ({
     if (data.length === 0) {
       return (
         <tr>
-          <td colSpan={columns.length} className="px-6 py-8 text-center text-gray-500 dark:text-gray-400 transition-colors duration-200">
+          <td colSpan={columns.length + (showExtraColumn ? 1 : 0)} className="px-6 py-8 text-center text-gray-500 dark:text-gray-400 transition-colors duration-200">
             <div className="flex flex-col items-center justify-center space-y-2">
               <svg
                 className="w-8 h-8 text-gray-300 dark:text-gray-600"
@@ -83,6 +83,7 @@ const SimpleTable = ({
                 : 'bg-gray-50 dark:bg-gray-750'
               } hover:bg-gray-100 dark:hover:bg-gray-600`}
           >
+            {/* Sử dụng renderRow được truyền vào để hiển thị nội dung từng hàng */}
             {renderRow(item, index)}
           </tr>
         ))}
@@ -91,13 +92,14 @@ const SimpleTable = ({
   };
 
   // Default row renderer nếu không có custom render
+  // Hàm này sẽ sử dụng các tên cột (chuỗi) để truy cập dữ liệu
   const defaultRenderRow = (item, index) => {
     return (
       <>
-        {columns.map((col, colIndex) => (
+        {columns.map((colName, colIndex) => ( // colName bây giờ là một chuỗi (ví dụ: 'name', 'subject')
           <td key={colIndex} className="px-6 py-3">
             <div className="text-gray-900 dark:text-gray-100">
-              {item[col] || 'N/A'}
+              {item[colName] || 'N/A'} {/* Truy cập dữ liệu bằng tên cột */}
             </div>
           </td>
         ))}
@@ -222,12 +224,13 @@ const SimpleTable = ({
         <table className={`min-w-full divide-y divide-gray-200 dark:divide-gray-700 text-sm ${tableClassName}`}>
           <thead className="bg-gray-50 dark:bg-gray-700">
             <tr>
-              {columns.map((col, idx) => (
+              {/* Lặp qua columns (mảng chuỗi) để hiển thị tiêu đề */}
+              {columns.map((colTitle, idx) => (
                 <th
                   key={idx}
                   className="px-6 py-3 text-left font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider text-xs"
                 >
-                  {col}
+                  {colTitle} {/* colTitle là một chuỗi, ví dụ: "Name", "Email" */}
                 </th>
               ))}
               {showExtraColumn && (
@@ -241,11 +244,11 @@ const SimpleTable = ({
             <DataTable
               data={data}
               loading={loading}
-              columns={showExtraColumn ? [...columns, 'actions'] : columns}
+              columns={showExtraColumn ? [...columns, 'actions'] : columns} // Truyền columns dưới dạng mảng chuỗi
               currentPage={pagination?.currentPage || 1}
               pageSize={pagination?.pageSize || 10}
               emptyMessage={emptyMessage}
-              renderRow={renderRow || defaultRenderRow}
+              renderRow={renderRow || defaultRenderRow} // Sử dụng renderRow được truyền vào hoặc defaultRenderRow
               zebra={zebra}
             />
           </tbody>
@@ -265,13 +268,13 @@ const SimpleTable = ({
               {renderMobileCard ? renderMobileCard(item, index) : (
                 <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow border border-gray-200 dark:border-gray-700">
                   <div className="space-y-2">
-                    {columns.map((col, colIndex) => (
+                    {columns.map((colName, colIndex) => ( // colName là một chuỗi
                       <div key={colIndex} className="flex justify-between items-center py-1">
                         <span className="text-sm font-medium text-gray-600 dark:text-gray-300">
-                          {col}:
+                          {colName}: {/* Hiển thị tên cột làm nhãn */}
                         </span>
                         <span className="text-sm text-gray-900 dark:text-gray-100">
-                          {item[col] || 'N/A'}
+                          {item[colName] || 'N/A'} {/* Truy cập dữ liệu bằng tên cột */}
                         </span>
                       </div>
                     ))}
@@ -325,4 +328,3 @@ const SimpleTable = ({
 };
 
 export default SimpleTable;
-
