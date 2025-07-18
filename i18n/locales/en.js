@@ -791,6 +791,49 @@ const en = {
     "invalidDecimalValue": "Invalid decimal value",
     "invalidBooleanValue": "Invalid boolean value (must be 0, 1, true, or false)"
   },
+  "emailTemplate": {
+    "title": "Email Template Management",
+    "searchPlaceholder": "Search email templates...",
+    
+    // Form labels
+    "name": "Template Name",
+    "namePlaceholder": "Enter template name",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter template description",
+    "descriptionHint": "Describe the purpose of this email template",
+    "templateGroup": "Template Group",
+    "selectTemplateGroup": "Select template group...",
+    "language": "Language",
+    "selectLanguage": "Select language...",
+    "templateType": "Template Type",
+    "selectTemplateType": "Select template type...",
+    "isDefault": "Default Template",
+    
+    // Template Types
+    "systemNotification": "System Notification",
+    "birthday": "Birthday Greeting",
+    "emailConfirmation": "Email Confirmation",
+    "customerAccepted": "Customer Accepted",
+    "passwordRecovery": "Password Recovery",
+    
+    // Actions
+    "addNewEmailTemplate": "Add New Email Template",
+    "editEmailTemplate": "Edit Email Template",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete email template \"{{name}}\"?",
+    
+    // Messages
+    "addSuccess": "Email template added successfully",
+    "updateSuccess": "Email template updated successfully",
+    "deleteSuccess": "Email template deleted successfully",
+    
+    // Validation
+    "pleaseEnterName": "Please enter template name",
+    "pleaseEnterDescription": "Please enter description",
+    "pleaseSelectTemplateGroup": "Please select template group",
+    "pleaseSelectLanguage": "Please select language",
+    "pleaseSelectTemplateType": "Please select template type"
+  },
   "emailSend": {
     "title": "Title",
     "template": "Email Template",
