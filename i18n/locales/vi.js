@@ -825,7 +825,10 @@ const vi = {
     "active": "Đang hoạt động",
     "inactive": "Ngưng hoạt động",
     "noData": "Không có dữ liệu khách hàng",
-    "loading": "Đang tải khách hàng..."
+    "loading": "Đang tải khách hàng...",
+    "activate": "Kích hoạt",
+    "confirmActivate": "Bạn có chắc chắn muốn kích hoạt tài khoản \"{{name}}\"?",
+    "confirmActivateTitle": "Xác nhận kích hoạt"
   },
   "email_detail": {
     "total_email": "Tổng email",
@@ -839,6 +842,7 @@ const vi = {
     "error": "Lỗi:",
     "email_body": "Nội dung email:",
     "template": "Template:",
+    "confirm_email": "Xác nhận Email",
     "status": {
       "pending": "Đang chờ",
       "success": "Thành công",
