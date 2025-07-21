@@ -176,37 +176,91 @@ const en = {
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete branch \"{{name}}\"? This action cannot be undone."
   },
-  "functions": {
-    "title": "Functions List",
-    "functionName": "Function Name",
-    "functionCode": "Function Code",
-    "subsystem": "Subsystem",
-    "functionNamePlaceholder": "Enter function name",
-    "selectFunctionCode": "Select function code",
-    "selectSubsystem": "Select subsystem",
-    "loadingSubsystems": "Loading subsystems...",
-    "addNewFunction": "Add New Function",
-    "editFunction": "Edit Function",
-    "searchPlaceholder": "Function name",
-    "addSuccess": "Added successfully",
-    "updateSuccess": "Updated successfully",
-    "deleteSuccess": "Deleted successfully",
-    "pleaseEnterFunctionName": "Please enter function name",
-    "pleaseSelectFunctionCode": "Please select function code",
-    "pleaseSelectSubsystem": "Please select subsystem",
-    "confirmDelete": "Confirm Delete",
-    "confirmDeleteMessage": "Are you sure you want to delete function \"{{name}}\"? This action cannot be undone.",
-    "cannotLoadSubsystems": "Cannot load subsystems list. Please try again.",
-    "functionCodes": {
-      "roleManagement": "Role Management",
-      "superPermissionManagement": "Super Admin Permission",
-      "permissionManagement": "Permission Management",
-      "userManagement": "User Management",
-      "customerManagement": "Customer Management",
-      "testManagement": "Test Management",
-      "testManagement2": "Test Management 2"
+  // English Translation (en.json)
+"emailTemplate": {
+  "title": "Email Template Management",
+  "searchPlaceholder": "Search email templates...",
+  
+  // Form labels
+  "name": "Template Name",
+  "namePlaceholder": "Enter template name",
+  "description": "Description", 
+  "descriptionPlaceholder": "Enter template description",
+  "descriptionHint": "Describe the purpose of this email template",
+  "templateGroup": "Template Group",
+  "selectTemplateGroup": "Select template group...",
+  "language": "Language",
+  "selectLanguage": "Select language...",
+  "templateType": "Template Type",
+  "selectTemplateType": "Select template type...",
+  "isDefault": "Default Template",
+  
+  // Additional fields from code
+  "bodyTemplate": "Email Content",
+  "pleaseEnterBodyTemplate": "Please enter email content",
+  "placeholders": "Available Placeholders",
+  "noPlaceholders": "No placeholders available",
+  
+  // Template Types
+  "systemNotification": "System Notification",
+  "birthday": "Birthday Greeting", 
+  "emailConfirmation": "Email Confirmation",
+  "customerAccepted": "Customer Accepted",
+  "passwordRecovery": "Password Recovery",
+  
+  // Actions
+  "addNewEmailTemplate": "Add New Email Template",
+  "editEmailTemplate": "Edit Email Template", 
+  "confirmDelete": "Confirm Delete",
+  "confirmDeleteMessage": "Are you sure you want to delete email template \"{{name}}\"?",
+  
+  // Messages
+  "addSuccess": "Email template added successfully",
+  "updateSuccess": "Email template updated successfully", 
+  "deleteSuccess": "Email template deleted successfully",
+  
+  // Validation
+  "pleaseEnterName": "Please enter template name",
+  "pleaseEnterDescription": "Please enter description",
+  "pleaseSelectTemplateGroup": "Please select template group",
+  "pleaseSelectLanguage": "Please select language", 
+  "pleaseSelectTemplateType": "Please select template type"
+},
+
+"functions": {
+  "title": "Functions List",
+  "functionName": "Function Name",
+  "functionCode": "Function Code",
+  "subsystem": "Subsystem",
+  "functionNamePlaceholder": "Enter function name",
+  "selectFunctionCode": "Select function code",
+  "selectSubsystem": "Select subsystem",
+  "loadingSubsystems": "Loading subsystems...",
+  "noSubsystems": "No subsystems available",
+  "addNewFunction": "Add New Function",
+  "editFunction": "Edit Function",
+  "searchPlaceholder": "Function name",
+  "addSuccess": "Added successfully",
+  "updateSuccess": "Updated successfully",
+  "deleteSuccess": "Deleted successfully",
+  "pleaseEnterFunctionName": "Please enter function name",
+  "pleaseSelectFunctionCode": "Please select function code",
+  "pleaseSelectSubsystem": "Please select subsystem",
+  "pleaseSelectModule": "Please select module",
+  "confirmDelete": "Confirm Delete",
+  "confirmDeleteMessage": "Are you sure you want to delete function \"{{name}}\"? This action cannot be undone.",
+  "cannotLoadSubsystems": "Cannot load subsystems list. Please try again.",
+  "functionCodes": {
+    "roleManagement": "Role Management",
+    "superPermissionManagement": "Super Admin Permission",
+    "permissionManagement": "Permission Management",
+    "userManagement": "User Management",
+    "customerManagement": "Customer Management",
+    "testManagement": "Test Management",
+    "testManagement2": "Test Management 2"
     }
   },
+
   "emailConfig": {
     "title": "Email Configuration Management",
     "searchPlaceholder": "Search email configurations...",
@@ -798,7 +852,7 @@ const en = {
     // Form labels
     "name": "Template Name",
     "namePlaceholder": "Enter template name",
-    "description": "Description",
+    "description": "Description", 
     "descriptionPlaceholder": "Enter template description",
     "descriptionHint": "Describe the purpose of this email template",
     "templateGroup": "Template Group",
@@ -809,29 +863,35 @@ const en = {
     "selectTemplateType": "Select template type...",
     "isDefault": "Default Template",
     
+    // Additional fields from code
+    "bodyTemplate": "Email Content",
+    "pleaseEnterBodyTemplate": "Please enter email content",
+    "placeholders": "Available Placeholders",
+    "noPlaceholders": "No placeholders available",
+    
     // Template Types
     "systemNotification": "System Notification",
-    "birthday": "Birthday Greeting",
+    "birthday": "Birthday Greeting", 
     "emailConfirmation": "Email Confirmation",
     "customerAccepted": "Customer Accepted",
     "passwordRecovery": "Password Recovery",
     
     // Actions
     "addNewEmailTemplate": "Add New Email Template",
-    "editEmailTemplate": "Edit Email Template",
+    "editEmailTemplate": "Edit Email Template", 
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete email template \"{{name}}\"?",
     
     // Messages
     "addSuccess": "Email template added successfully",
-    "updateSuccess": "Email template updated successfully",
+    "updateSuccess": "Email template updated successfully", 
     "deleteSuccess": "Email template deleted successfully",
     
     // Validation
     "pleaseEnterName": "Please enter template name",
     "pleaseEnterDescription": "Please enter description",
     "pleaseSelectTemplateGroup": "Please select template group",
-    "pleaseSelectLanguage": "Please select language",
+    "pleaseSelectLanguage": "Please select language", 
     "pleaseSelectTemplateType": "Please select template type"
   },
   "emailSend": {
