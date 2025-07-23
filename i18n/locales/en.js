@@ -264,6 +264,7 @@ const en = {
   "emailConfig": {
     "title": "Email Configuration Management",
     "searchPlaceholder": "Search email configurations...",
+    
 
     // Form labels - Updated to match API
     "smtpServer": "SMTP Server",
@@ -306,7 +307,16 @@ const en = {
 
     // Loading states
     "loadingEmailConfigs": "Loading email configurations...",
-    "cannotLoadEmailConfigs": "Cannot load email configurations"
+    "cannotLoadEmailConfigs": "Cannot load email configurations",
+
+    "sendSampleEmail": "Send Sample Email",
+    "sendSampleEmailTo": "Send sample email from",
+    "recipientEmail": "Recipient Email",
+    "enterRecipientEmail": "Enter recipient email",
+    "sendSample": "Send Sample",
+    "sending": "Sending...",
+    "sampleEmailSent": "Sample email sent successfully",
+    "sampleEmailFailed": "Failed to send sample email"
   },
   "permissionGroupTypes": {
     "title": "Permission Group Types List",
