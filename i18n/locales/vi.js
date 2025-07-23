@@ -252,7 +252,16 @@ const vi = {
 
     // Loading states
     "loadingEmailConfigs": "Đang tải danh sách cấu hình email...",
-    "cannotLoadEmailConfigs": "Không thể tải danh sách cấu hình email"
+    "cannotLoadEmailConfigs": "Không thể tải danh sách cấu hình email",
+
+    "sendSampleEmail": "Gửi email mẫu",
+    "sendSampleEmailTo": "Gửi email mẫu từ",
+    "recipientEmail": "Email người nhận",
+    "enterRecipientEmail": "Nhập email người nhận",
+    "sendSample": "Gửi mẫu",
+    "sending": "Đang gửi...",
+    "sampleEmailSent": "Gửi email mẫu thành công",
+    "sampleEmailFailed": "Gửi email mẫu thất bại"
   },
   "permissionGroupTypes": {
     "title": "Danh sách loại nhóm quyền",
