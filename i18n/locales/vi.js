@@ -683,6 +683,7 @@ const vi = {
     "detailTitle": "Chi tiết cấu hình người dùng"
   },
  "emailTemplate": {
+    // Basic info
     "title": "Quản lý Mẫu Email",
     "searchPlaceholder": "Tìm kiếm mẫu email...",
     
@@ -690,7 +691,7 @@ const vi = {
     "name": "Tên mẫu",
     "namePlaceholder": "Nhập tên mẫu",
     "description": "Mô tả",
-    "descriptionPlaceholder": "Nhập mô tả mẫu", 
+    "descriptionPlaceholder": "Nhập mô tả mẫu",
     "descriptionHint": "Mô tả mục đích sử dụng của mẫu email này",
     "templateGroup": "Nhóm mẫu",
     "selectTemplateGroup": "Chọn nhóm mẫu...",
@@ -700,36 +701,95 @@ const vi = {
     "selectTemplateType": "Chọn loại mẫu...",
     "isDefault": "Mẫu mặc định",
     
-    // Additional fields from code
+    // Email content fields
     "bodyTemplate": "Nội dung email",
-    "pleaseEnterBodyTemplate": "Vui lòng nhập nội dung email",
+    "bodyTemplatePlaceholder": "Nhập nội dung email...",
+    "subject": "Tiêu đề email",
+    "subjectPlaceholder": "Nhập tiêu đề email",
+    
+    // Placeholder system
     "placeholders": "Placeholder khả dụng",
     "noPlaceholders": "Không có placeholder nào",
+    "placeholderHint": "Sử dụng các placeholder để tự động thay thế dữ liệu",
+    "insertPlaceholder": "Chèn placeholder",
+    
+    // Template Groups
+    "marketing": "Marketing",
+    "notification": "Thông báo",
+    "transactional": "Giao dịch",
+    "system": "Hệ thống",
+    "welcome": "Chào mừng",
+    
+    // Languages
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh",
     
     // Template Types
     "systemNotification": "Thông báo hệ thống",
     "birthday": "Chúc mừng sinh nhật",
-    "emailConfirmation": "Xác nhận email", 
+    "emailConfirmation": "Xác nhận email",
     "customerAccepted": "Chấp nhận khách hàng",
     "passwordRecovery": "Khôi phục mật khẩu",
+    "welcomeEmail": "Email chào mừng",
+    "orderConfirmation": "Xác nhận đơn hàng",
+    "invoiceEmail": "Hóa đơn điện tử",
+    "promotionalEmail": "Email khuyến mãi",
+    "newsletterEmail": "Bản tin",
     
     // Actions
     "addNewEmailTemplate": "Thêm mẫu email mới",
     "editEmailTemplate": "Sửa mẫu email",
-    "confirmDelete": "Xác nhận xóa", 
-    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu email \"{{name}}\" không?",
+    "duplicateTemplate": "Nhân bản mẫu",
+    "previewTemplate": "Xem trước mẫu",
+    "testTemplate": "Gửi thử mẫu",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu email \"{name}\" không?",
+    
+    // Status and states
+    "active": "Đang hoạt động",
+    "inactive": "Không hoạt động",
+    "draft": "Bản nháp",
+    "published": "Đã xuất bản",
     
     // Messages
     "addSuccess": "Thêm mẫu email thành công",
     "updateSuccess": "Cập nhật mẫu email thành công",
     "deleteSuccess": "Xóa mẫu email thành công",
+    "duplicateSuccess": "Nhân bản mẫu email thành công",
+    "testEmailSent": "Gửi email thử nghiệm thành công",
+    "testEmailFailed": "Gửi email thử nghiệm thất bại",
     
-    // Validation
+    // Validation messages
     "pleaseEnterName": "Vui lòng nhập tên mẫu",
-    "pleaseEnterDescription": "Vui lòng nhập mô tả", 
+    "pleaseEnterDescription": "Vui lòng nhập mô tả",
+    "pleaseEnterSubject": "Vui lòng nhập tiêu đề email",
+    "pleaseEnterBodyTemplate": "Vui lòng nhập nội dung email",
     "pleaseSelectTemplateGroup": "Vui lòng chọn nhóm mẫu",
     "pleaseSelectLanguage": "Vui lòng chọn ngôn ngữ",
-    "pleaseSelectTemplateType": "Vui lòng chọn loại mẫu"
+    "pleaseSelectTemplateType": "Vui lòng chọn loại mẫu",
+    "nameAlreadyExists": "Tên mẫu đã tồn tại",
+    "invalidEmailContent": "Nội dung email không hợp lệ",
+    
+    // Preview and test
+    "previewMode": "Chế độ xem trước",
+    "testEmailTitle": "Gửi email thử nghiệm",
+    "testEmailDescription": "Nhập email để nhận mẫu thử nghiệm",
+    "recipientEmail": "Email người nhận",
+    "sendTestEmail": "Gửi thử nghiệm",
+    "sending": "Đang gửi...",
+    
+    // Template editor
+    "editorToolbar": "Thanh công cụ",
+    "formatText": "Định dạng văn bản",
+    "insertImage": "Chèn hình ảnh",
+    "insertLink": "Chèn liên kết",
+    "insertTable": "Chèn bảng",
+    
+    // Statistics
+    "totalTemplates": "Tổng số mẫu",
+    "activeTemplates": "Mẫu đang hoạt động",
+    "draftTemplates": "Mẫu nháp",
+    "mostUsedTemplate": "Mẫu được sử dụng nhiều nhất"
   },
   "send_email": {
     "customer_list": "Danh sách khách hàng",
