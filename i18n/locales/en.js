@@ -176,56 +176,115 @@ const en = {
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete branch \"{{name}}\"? This action cannot be undone."
   },
-  // English Translation (en.json)
-"emailTemplate": {
-  "title": "Email Template Management",
-  "searchPlaceholder": "Search email templates...",
-  
-  // Form labels
-  "name": "Template Name",
-  "namePlaceholder": "Enter template name",
-  "description": "Description", 
-  "descriptionPlaceholder": "Enter template description",
-  "descriptionHint": "Describe the purpose of this email template",
-  "templateGroup": "Template Group",
-  "selectTemplateGroup": "Select template group...",
-  "language": "Language",
-  "selectLanguage": "Select language...",
-  "templateType": "Template Type",
-  "selectTemplateType": "Select template type...",
-  "isDefault": "Default Template",
-  
-  // Additional fields from code
-  "bodyTemplate": "Email Content",
-  "pleaseEnterBodyTemplate": "Please enter email content",
-  "placeholders": "Available Placeholders",
-  "noPlaceholders": "No placeholders available",
-  
-  // Template Types
-  "systemNotification": "System Notification",
-  "birthday": "Birthday Greeting", 
-  "emailConfirmation": "Email Confirmation",
-  "customerAccepted": "Customer Accepted",
-  "passwordRecovery": "Password Recovery",
-  
-  // Actions
-  "addNewEmailTemplate": "Add New Email Template",
-  "editEmailTemplate": "Edit Email Template", 
-  "confirmDelete": "Confirm Delete",
-  "confirmDeleteMessage": "Are you sure you want to delete email template \"{{name}}\"?",
-  
-  // Messages
-  "addSuccess": "Email template added successfully",
-  "updateSuccess": "Email template updated successfully", 
-  "deleteSuccess": "Email template deleted successfully",
-  
-  // Validation
-  "pleaseEnterName": "Please enter template name",
-  "pleaseEnterDescription": "Please enter description",
-  "pleaseSelectTemplateGroup": "Please select template group",
-  "pleaseSelectLanguage": "Please select language", 
-  "pleaseSelectTemplateType": "Please select template type"
-},
+ "emailTemplate": {
+    // Basic info
+    "title": "Email Template Management",
+    "searchPlaceholder": "Search email templates...",
+    
+    // Form labels
+    "name": "Template Name",
+    "namePlaceholder": "Enter template name",
+    "description": "Description",
+    "descriptionPlaceholder": "Enter template description",
+    "descriptionHint": "Describe the purpose of this email template",
+    "templateGroup": "Template Group",
+    "selectTemplateGroup": "Select template group...",
+    "language": "Language",
+    "selectLanguage": "Select language...",
+    "templateType": "Template Type",
+    "selectTemplateType": "Select template type...",
+    "isDefault": "Default Template",
+    
+    // Email content fields
+    "bodyTemplate": "Email Content",
+    "bodyTemplatePlaceholder": "Enter email content...",
+    "subject": "Email Subject",
+    "subjectPlaceholder": "Enter email subject",
+    
+    // Placeholder system
+    "placeholders": "Available Placeholders",
+    "noPlaceholders": "No placeholders available",
+    "placeholderHint": "Use placeholders to automatically replace data",
+    "insertPlaceholder": "Insert Placeholder",
+    
+    // Template Groups
+    "marketing": "Marketing",
+    "notification": "Notification",
+    "transactional": "Transactional",
+    "system": "System",
+    "welcome": "Welcome",
+    
+    // Languages
+    "vietnamese": "Vietnamese",
+    "english": "English",
+    
+    // Template Types
+    "systemNotification": "System Notification",
+    "birthday": "Birthday Greeting",
+    "emailConfirmation": "Email Confirmation",
+    "customerAccepted": "Customer Accepted",
+    "passwordRecovery": "Password Recovery",
+    "welcomeEmail": "Welcome Email",
+    "orderConfirmation": "Order Confirmation",
+    "invoiceEmail": "Invoice Email",
+    "promotionalEmail": "Promotional Email",
+    "newsletterEmail": "Newsletter",
+    
+    // Actions
+    "addNewEmailTemplate": "Add New Email Template",
+    "editEmailTemplate": "Edit Email Template",
+    "duplicateTemplate": "Duplicate Template",
+    "previewTemplate": "Preview Template",
+    "testTemplate": "Test Template",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete email template \"{name}\"?",
+    
+    // Status and states
+    "active": "Active",
+    "inactive": "Inactive",
+    "draft": "Draft",
+    "published": "Published",
+    
+    // Messages
+    "addSuccess": "Email template added successfully",
+    "updateSuccess": "Email template updated successfully",
+    "deleteSuccess": "Email template deleted successfully",
+    "duplicateSuccess": "Email template duplicated successfully",
+    "testEmailSent": "Test email sent successfully",
+    "testEmailFailed": "Failed to send test email",
+    
+    // Validation messages
+    "pleaseEnterName": "Please enter template name",
+    "pleaseEnterDescription": "Please enter description",
+    "pleaseEnterSubject": "Please enter email subject",
+    "pleaseEnterBodyTemplate": "Please enter email content",
+    "pleaseSelectTemplateGroup": "Please select template group",
+    "pleaseSelectLanguage": "Please select language",
+    "pleaseSelectTemplateType": "Please select template type",
+    "nameAlreadyExists": "Template name already exists",
+    "invalidEmailContent": "Invalid email content",
+    
+    // Preview and test
+    "previewMode": "Preview Mode",
+    "testEmailTitle": "Send Test Email",
+    "testEmailDescription": "Enter email address to receive test template",
+    "recipientEmail": "Recipient Email",
+    "sendTestEmail": "Send Test",
+    "sending": "Sending...",
+    
+    // Template editor
+    "editorToolbar": "Editor Toolbar",
+    "formatText": "Format Text",
+    "insertImage": "Insert Image",
+    "insertLink": "Insert Link",
+    "insertTable": "Insert Table",
+    
+    // Statistics
+    "totalTemplates": "Total Templates",
+    "activeTemplates": "Active Templates",
+    "draftTemplates": "Draft Templates",
+    "mostUsedTemplate": "Most Used Template"
+  },
 
 "functions": {
   "title": "Functions List",
@@ -855,54 +914,114 @@ const en = {
     "invalidDecimalValue": "Invalid decimal value",
     "invalidBooleanValue": "Invalid boolean value (must be 0, 1, true, or false)"
   },
-  "emailTemplate": {
+   "emailTemplate": {
+    // Basic info
     "title": "Email Template Management",
     "searchPlaceholder": "Search email templates...",
     
     // Form labels
-    "name": "Template Name",
-    "namePlaceholder": "Enter template name",
-    "description": "Description", 
-    "descriptionPlaceholder": "Enter template description",
-    "descriptionHint": "Describe the purpose of this email template",
-    "templateGroup": "Template Group",
-    "selectTemplateGroup": "Select template group...",
-    "language": "Language",
-    "selectLanguage": "Select language...",
-    "templateType": "Template Type",
-    "selectTemplateType": "Select template type...",
-    "isDefault": "Default Template",
+    name: "Template Name",
+    namePlaceholder: "Enter template name",
+    description: "Description",
+    descriptionPlaceholder: "Enter template description",
+    descriptionHint: "Describe the purpose of this email template",
+    templateGroup: "Template Group",
+    selectTemplateGroup: "Select template group...",
+    language: "Language",
+    selectLanguage: "Select language...",
+    templateType: "Template Type",
+    selectTemplateType: "Select template type...",
+    isDefault: "Default Template",
     
-    // Additional fields from code
-    "bodyTemplate": "Email Content",
-    "pleaseEnterBodyTemplate": "Please enter email content",
-    "placeholders": "Available Placeholders",
-    "noPlaceholders": "No placeholders available",
+    // Email content fields
+    bodyTemplate: "Email Content",
+    bodyTemplatePlaceholder: "Enter email content...",
+    subject: "Email Subject",
+    subjectPlaceholder: "Enter email subject",
+    
+    // Placeholder system
+    placeholders: "Available Placeholders",
+    noPlaceholders: "No placeholders available",
+    placeholderHint: "Use placeholders to automatically replace data",
+    insertPlaceholder: "Insert Placeholder",
+    
+    // Template Groups
+    marketing: "Marketing",
+    notification: "Notification",
+    transactional: "Transactional",
+    system: "System",
+    welcome: "Welcome",
+    
+    // Languages
+    vietnamese: "Vietnamese",
+    english: "English",
     
     // Template Types
-    "systemNotification": "System Notification",
-    "birthday": "Birthday Greeting", 
-    "emailConfirmation": "Email Confirmation",
-    "customerAccepted": "Customer Accepted",
-    "passwordRecovery": "Password Recovery",
+    systemNotification: "System Notification",
+    birthday: "Birthday Greeting",
+    emailConfirmation: "Email Confirmation",
+    customerAccepted: "Customer Accepted",
+    passwordRecovery: "Password Recovery",
+    welcomeEmail: "Welcome Email",
+    orderConfirmation: "Order Confirmation",
+    invoiceEmail: "Invoice Email",
+    promotionalEmail: "Promotional Email",
+    newsletterEmail: "Newsletter",
     
     // Actions
-    "addNewEmailTemplate": "Add New Email Template",
-    "editEmailTemplate": "Edit Email Template", 
-    "confirmDelete": "Confirm Delete",
-    "confirmDeleteMessage": "Are you sure you want to delete email template \"{{name}}\"?",
+    addNewEmailTemplate: "Add New Email Template",
+    editEmailTemplate: "Edit Email Template",
+    duplicateTemplate: "Duplicate Template",
+    previewTemplate: "Preview Template",
+    testTemplate: "Test Template",
+    confirmDelete: "Confirm Delete",
+    confirmDeleteMessage: "Are you sure you want to delete email template \"{name}\"?",
+    
+    // Status and states
+    active: "Active",
+    inactive: "Inactive",
+    draft: "Draft",
+    published: "Published",
     
     // Messages
-    "addSuccess": "Email template added successfully",
-    "updateSuccess": "Email template updated successfully", 
-    "deleteSuccess": "Email template deleted successfully",
+    addSuccess: "Email template added successfully",
+    updateSuccess: "Email template updated successfully",
+    deleteSuccess: "Email template deleted successfully",
+    duplicateSuccess: "Email template duplicated successfully",
+    testEmailSent: "Test email sent successfully",
+    testEmailFailed: "Failed to send test email",
     
-    // Validation
-    "pleaseEnterName": "Please enter template name",
-    "pleaseEnterDescription": "Please enter description",
-    "pleaseSelectTemplateGroup": "Please select template group",
-    "pleaseSelectLanguage": "Please select language", 
-    "pleaseSelectTemplateType": "Please select template type"
+    // Validation messages
+    pleaseEnterName: "Please enter template name",
+    pleaseEnterDescription: "Please enter description",
+    pleaseEnterSubject: "Please enter email subject",
+    pleaseEnterBodyTemplate: "Please enter email content",
+    pleaseSelectTemplateGroup: "Please select template group",
+    pleaseSelectLanguage: "Please select language",
+    pleaseSelectTemplateType: "Please select template type",
+    nameAlreadyExists: "Template name already exists",
+    invalidEmailContent: "Invalid email content",
+    
+    // Preview and test
+    previewMode: "Preview Mode",
+    testEmailTitle: "Send Test Email",
+    testEmailDescription: "Enter email address to receive test template",
+    recipientEmail: "Recipient Email",
+    sendTestEmail: "Send Test",
+    sending: "Sending...",
+    
+    // Template editor
+    editorToolbar: "Editor Toolbar",
+    formatText: "Format Text",
+    insertImage: "Insert Image",
+    insertLink: "Insert Link",
+    insertTable: "Insert Table",
+    
+    // Statistics
+    totalTemplates: "Total Templates",
+    activeTemplates: "Active Templates",
+    draftTemplates: "Draft Templates",
+    mostUsedTemplate: "Most Used Template"
   },
   "emailSend": {
     "title": "Title",
