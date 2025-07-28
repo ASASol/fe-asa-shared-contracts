@@ -320,54 +320,77 @@ const en = {
     }
   },
 
-  "emailConfig": {
-    "title": "Email Configuration Management",
-    "searchPlaceholder": "Search email configurations...",
+  "notificationConfig": {
+    "title": "Notification Channel Configuration Management",
+    "searchPlaceholder": "Search notification configurations...",
     
-
-    // Form labels - Updated to match API
-    "smtpServer": "SMTP Server",
-    "smtpServerPlaceholder": "e.g., smtp.gmail.com",
-    "port": "Port",
-    "portPlaceholder": "e.g., 587",
-    "fromEmail": "From Email",
-    "fromEmailPlaceholder": "e.g., noreply@company.com",
-    "displayName": "Display Name",
-    "displayNamePlaceholder": "e.g., ABC System",
-    "userName": "Username",
-    "userNamePlaceholder": "Enter username",
-    "password": "Password",
-    "passwordPlaceholder": "Enter password",
+    // Basic form labels
+    "configName": "Configuration Name",
+    "configNamePlaceholder": "e.g., Customer Notification Email",
+    "channel": "Notification Channel",
+    "selectChannel": "Select notification channel",
     "isDefault": "Default",
     "default": "Default",
     "toggleDefault": "Click to toggle default status",
     "updateDefaultSuccess": "Default status updated successfully",
 
+    // Email configuration labels
+    "emailSmtpServer": "SMTP Server",
+    "emailSmtpServerPlaceholder": "e.g., smtp.gmail.com",
+    "emailPort": "Port",
+    "emailPortPlaceholder": "e.g., 587",
+    "emailFrom": "From Email",
+    "emailFromPlaceholder": "e.g., noreply@company.com",
+    "emailDisplayName": "Display Name",
+    "emailDisplayNamePlaceholder": "e.g., ASA Soft - System Notifications",
+    "emailUserName": "Username",
+    "emailUserNamePlaceholder": "Enter username/email",
+    "emailPassword": "Password",
+    "emailPasswordPlaceholder": "Enter password",
+    "emailEnableSsl": "Enable SSL",
+
+    // SMS configuration labels
+    "smsProvider": "SMS Provider",
+    "smsProviderPlaceholder": "e.g., Twilio, AWS SNS, Vonage",
+    "smsApiKey": "API Key",
+    "smsApiKeyPlaceholder": "Enter API key",
+
+    // Table column headers
+    "channel": "Channel",
+    "configuration": "Configuration",
+    "emailInfo": "Email Information",
+    "credentials": "Credentials",
+
     // Actions
-    "addNewEmailConfig": "Add New Email Configuration",
-    "editEmailConfig": "Edit Email Configuration",
+    "addNewNotificationConfig": "Add New Notification Configuration",
+    "editNotificationConfig": "Edit Notification Configuration",
     "confirmDelete": "Confirm Delete",
-    "confirmDeleteMessage": "Are you sure you want to delete email configuration \"{{name}}\"?",
+    "confirmDeleteMessage": "Are you sure you want to delete notification configuration \"{{name}}\"?",
 
     // Messages
-    "addSuccess": "Email configuration added successfully",
-    "updateSuccess": "Email configuration updated successfully",
-    "deleteSuccess": "Email configuration deleted successfully",
+    "addSuccess": "Notification configuration added successfully",
+    "updateSuccess": "Notification configuration updated successfully",
+    "deleteSuccess": "Notification configuration deleted successfully",
 
-    // Validation messages - Updated
+    // Validation messages
+    "pleaseEnterConfigName": "Please enter configuration name",
+    "pleaseSelectChannel": "Please select notification channel",
     "pleaseEnterSmtpServer": "Please enter SMTP server",
     "pleaseEnterPort": "Please enter port",
     "pleaseEnterFromEmail": "Please enter from email",
     "pleaseEnterDisplayName": "Please enter display name",
     "pleaseEnterUserName": "Please enter username",
     "pleaseEnterPassword": "Please enter password",
+    "pleaseEnterSmsProvider": "Please enter SMS provider",
+    "pleaseEnterSmsApiKey": "Please enter SMS API key",
     "invalidEmailFormat": "Invalid email format",
     "invalidPortRange": "Port must be between 1 and 65535",
 
     // Loading states
-    "loadingEmailConfigs": "Loading email configurations...",
-    "cannotLoadEmailConfigs": "Cannot load email configurations",
+    "loadingConfigs": "Loading notification configurations...",
+    "cannotLoadConfigs": "Cannot load notification configurations",
 
+    // Send sample email functionality
     "sendSampleEmail": "Send Sample Email",
     "sendSampleEmailTo": "Send sample email from",
     "recipientEmail": "Recipient Email",
@@ -375,7 +398,47 @@ const en = {
     "sendSample": "Send Sample",
     "sending": "Sending...",
     "sampleEmailSent": "Sample email sent successfully",
-    "sampleEmailFailed": "Failed to send sample email"
+    "sampleEmailFailed": "Failed to send sample email",
+    "onlyEmailChannelSupported": "Sample email only supported for Email channels",
+
+    // Channel types
+    "channelEmail": "Email",
+    "channelSms": "SMS",
+    
+    // Help text
+    "emailConfigHelp": "Configure SMTP settings for email notifications",
+    "smsConfigHelp": "Configure SMS provider settings for SMS notifications",
+    "defaultConfigHelp": "Mark as default configuration for this channel type",
+    
+    // Status messages
+    "configurationActive": "Active",
+    "configurationInactive": "Inactive",
+    
+    // Additional validation
+    "configNameRequired": "Configuration name is required",
+    "channelRequired": "Channel selection is required",
+    "emailConfigurationRequired": "Email configuration is required for Email channel",
+    "smsConfigurationRequired": "SMS configuration is required for SMS channel",
+    
+    // Import/Export (if needed)
+    "exportConfigurations": "Export Configurations",
+    "importConfigurations": "Import Configurations",
+    
+    // Bulk actions (if needed)
+    "bulkDelete": "Bulk Delete",
+    "selectAll": "Select All",
+    "selectedItems": "{{count}} items selected",
+    
+    // Error messages
+    "errorLoadingData": "Error loading notification configurations",
+    "errorSavingConfig": "Error saving configuration",
+    "errorDeletingConfig": "Error deleting configuration",
+    "errorSendingSample": "Error sending sample notification",
+    
+    // Success confirmations
+    "configSavedSuccessfully": "Configuration saved successfully",
+    "configDeletedSuccessfully": "Configuration deleted successfully",
+    "sampleSentSuccessfully": "Sample notification sent successfully"
   },
   "permissionGroupTypes": {
     "title": "Permission Group Types List",
