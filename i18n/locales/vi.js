@@ -1033,6 +1033,14 @@ const vi = {
       "failed": "Thất bại",
       "unknown": "Không xác định"
     }
+  },
+  "fileUpload": {
+    "oversizeTitle": "File vượt quá dung lượng",
+    "oversizeMessage": "Các file sau vượt quá {{size}}MB và sẽ bị bỏ qua:\n{{fileNames}}",
+    "confirm": "Tiếp tục",
+    "cancel": "Hủy",
+    "selectFiles": "Chọn tệp đính kèm",
+    "tooLarge": "File \"{{fileName}}\" vượt quá dung lượng cho phép ({{size}}MB)."
   }
 };
 

@@ -176,11 +176,11 @@ const en = {
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete branch \"{{name}}\"? This action cannot be undone."
   },
- "emailTemplate": {
+  "emailTemplate": {
     // Basic info
     "title": "Email Template Management",
     "searchPlaceholder": "Search email templates...",
-    
+
     // Form labels
     "name": "Template Name",
     "namePlaceholder": "Enter template name",
@@ -194,30 +194,30 @@ const en = {
     "templateType": "Template Type",
     "selectTemplateType": "Select template type...",
     "isDefault": "Default Template",
-    
+
     // Email content fields
     "bodyTemplate": "Email Content",
     "bodyTemplatePlaceholder": "Enter email content...",
     "subject": "Email Subject",
     "subjectPlaceholder": "Enter email subject",
-    
+
     // Placeholder system
     "placeholders": "Available Placeholders",
     "noPlaceholders": "No placeholders available",
     "placeholderHint": "Use placeholders to automatically replace data",
     "insertPlaceholder": "Insert Placeholder",
-    
+
     // Template Groups
     "marketing": "Marketing",
     "notification": "Notification",
     "transactional": "Transactional",
     "system": "System",
     "welcome": "Welcome",
-    
+
     // Languages
     "vietnamese": "Vietnamese",
     "english": "English",
-    
+
     // Template Types
     "systemNotification": "System Notification",
     "birthday": "Birthday Greeting",
@@ -229,7 +229,7 @@ const en = {
     "invoiceEmail": "Invoice Email",
     "promotionalEmail": "Promotional Email",
     "newsletterEmail": "Newsletter",
-    
+
     // Actions
     "addNewEmailTemplate": "Add New Email Template",
     "editEmailTemplate": "Edit Email Template",
@@ -238,13 +238,13 @@ const en = {
     "testTemplate": "Test Template",
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete email template \"{name}\"?",
-    
+
     // Status and states
     "active": "Active",
     "inactive": "Inactive",
     "draft": "Draft",
     "published": "Published",
-    
+
     // Messages
     "addSuccess": "Email template added successfully",
     "updateSuccess": "Email template updated successfully",
@@ -252,7 +252,7 @@ const en = {
     "duplicateSuccess": "Email template duplicated successfully",
     "testEmailSent": "Test email sent successfully",
     "testEmailFailed": "Failed to send test email",
-    
+
     // Validation messages
     "pleaseEnterName": "Please enter template name",
     "pleaseEnterDescription": "Please enter description",
@@ -263,7 +263,7 @@ const en = {
     "pleaseSelectTemplateType": "Please select template type",
     "nameAlreadyExists": "Template name already exists",
     "invalidEmailContent": "Invalid email content",
-    
+
     // Preview and test
     "previewMode": "Preview Mode",
     "testEmailTitle": "Send Test Email",
@@ -271,14 +271,14 @@ const en = {
     "recipientEmail": "Recipient Email",
     "sendTestEmail": "Send Test",
     "sending": "Sending...",
-    
+
     // Template editor
     "editorToolbar": "Editor Toolbar",
     "formatText": "Format Text",
     "insertImage": "Insert Image",
     "insertLink": "Insert Link",
     "insertTable": "Insert Table",
-    
+
     // Statistics
     "totalTemplates": "Total Templates",
     "activeTemplates": "Active Templates",
@@ -286,39 +286,40 @@ const en = {
     "mostUsedTemplate": "Most Used Template"
   },
 
-"functions": {
-  "title": "Functions List",
-  "functionName": "Function Name",
-  "functionCode": "Function Code",
-  "subsystem": "Subsystem",
-  "functionNamePlaceholder": "Enter function name",
-  "selectFunctionCode": "Select function code",
-  "selectSubsystem": "Select subsystem",
-  "loadingSubsystems": "Loading subsystems...",
-  "noSubsystems": "No subsystems available",
-  "addNewFunction": "Add New Function",
-  "editFunction": "Edit Function",
-  "searchPlaceholder": "Function name",
-  "addSuccess": "Added successfully",
-  "updateSuccess": "Updated successfully",
-  "deleteSuccess": "Deleted successfully",
-  "pleaseEnterFunctionName": "Please enter function name",
-  "pleaseSelectFunctionCode": "Please select function code",
-  "pleaseSelectSubsystem": "Please select subsystem",
-  "pleaseSelectModule": "Please select module",
-  "confirmDelete": "Confirm Delete",
-  "confirmDeleteMessage": "Are you sure you want to delete function \"{{name}}\"? This action cannot be undone.",
-  "cannotLoadSubsystems": "Cannot load subsystems list. Please try again.",
-  "functionCodes": {
-    "roleManagement": "Role Management",
-    "superPermissionManagement": "Super Admin Permission",
-    "permissionManagement": "Permission Management",
-    "userManagement": "User Management",
-    "customerManagement": "Customer Management",
-    "testManagement": "Test Management",
-    "testManagement2": "Test Management 2"
+  "functions": {
+    "title": "Functions List",
+    "functionName": "Function Name",
+    "functionCode": "Function Code",
+    "subsystem": "Subsystem",
+    "functionNamePlaceholder": "Enter function name",
+    "selectFunctionCode": "Select function code",
+    "selectSubsystem": "Select subsystem",
+    "loadingSubsystems": "Loading subsystems...",
+    "noSubsystems": "No subsystems available",
+    "addNewFunction": "Add New Function",
+    "editFunction": "Edit Function",
+    "searchPlaceholder": "Function name",
+    "addSuccess": "Added successfully",
+    "updateSuccess": "Updated successfully",
+    "deleteSuccess": "Deleted successfully",
+    "pleaseEnterFunctionName": "Please enter function name",
+    "pleaseSelectFunctionCode": "Please select function code",
+    "pleaseSelectSubsystem": "Please select subsystem",
+    "pleaseSelectModule": "Please select module",
+    "confirmDelete": "Confirm Delete",
+    "confirmDeleteMessage": "Are you sure you want to delete function \"{{name}}\"? This action cannot be undone.",
+    "cannotLoadSubsystems": "Cannot load subsystems list. Please try again.",
+    "functionCodes": {
+      "roleManagement": "Role Management",
+      "superPermissionManagement": "Super Admin Permission",
+      "permissionManagement": "Permission Management",
+      "userManagement": "User Management",
+      "customerManagement": "Customer Management",
+      "testManagement": "Test Management",
+      "testManagement2": "Test Management 2"
     }
   },
+
 
   "notificationConfig": {
     "title": "Notification Channel Configuration Management",
@@ -329,6 +330,7 @@ const en = {
     "configNamePlaceholder": "e.g., Customer Notification Email",
     "channel": "Notification Channel",
     "selectChannel": "Select notification channel",
+
     "isDefault": "Default",
     "default": "Default",
     "toggleDefault": "Click to toggle default status",
@@ -953,13 +955,13 @@ const en = {
     "deleteSuccess": "System setting deleted successfully",
     "long": "Long Integer",
     "double": "Double",
-    "datetime": "Date Time", 
+    "datetime": "Date Time",
     "guid": "GUID",
     "byte": "Byte",
     "char": "Character",
     "float": "Float",
     "invalidDateTimeValue": "Invalid DateTime value",
-    "invalidGuidValue": "Invalid GUID value", 
+    "invalidGuidValue": "Invalid GUID value",
     "invalidCharValue": "Invalid character value (must be 1 character)",
     "valueNotInAllowedValues": "Value is not in allowed values list",
     "keyCannotBeEdited": "Key cannot be edited",
@@ -977,11 +979,11 @@ const en = {
     "invalidDecimalValue": "Invalid decimal value",
     "invalidBooleanValue": "Invalid boolean value (must be 0, 1, true, or false)"
   },
-   "emailTemplate": {
+  "emailTemplate": {
     // Basic info
     "title": "Email Template Management",
     "searchPlaceholder": "Search email templates...",
-    
+
     // Form labels
     name: "Template Name",
     namePlaceholder: "Enter template name",
@@ -995,30 +997,30 @@ const en = {
     templateType: "Template Type",
     selectTemplateType: "Select template type...",
     isDefault: "Default Template",
-    
+
     // Email content fields
     bodyTemplate: "Email Content",
     bodyTemplatePlaceholder: "Enter email content...",
     subject: "Email Subject",
     subjectPlaceholder: "Enter email subject",
-    
+
     // Placeholder system
     placeholders: "Available Placeholders",
     noPlaceholders: "No placeholders available",
     placeholderHint: "Use placeholders to automatically replace data",
     insertPlaceholder: "Insert Placeholder",
-    
+
     // Template Groups
     marketing: "Marketing",
     notification: "Notification",
     transactional: "Transactional",
     system: "System",
     welcome: "Welcome",
-    
+
     // Languages
     vietnamese: "Vietnamese",
     english: "English",
-    
+
     // Template Types
     systemNotification: "System Notification",
     birthday: "Birthday Greeting",
@@ -1030,7 +1032,7 @@ const en = {
     invoiceEmail: "Invoice Email",
     promotionalEmail: "Promotional Email",
     newsletterEmail: "Newsletter",
-    
+
     // Actions
     addNewEmailTemplate: "Add New Email Template",
     editEmailTemplate: "Edit Email Template",
@@ -1039,13 +1041,13 @@ const en = {
     testTemplate: "Test Template",
     confirmDelete: "Confirm Delete",
     confirmDeleteMessage: "Are you sure you want to delete email template \"{name}\"?",
-    
+
     // Status and states
     active: "Active",
     inactive: "Inactive",
     draft: "Draft",
     published: "Published",
-    
+
     // Messages
     addSuccess: "Email template added successfully",
     updateSuccess: "Email template updated successfully",
@@ -1053,7 +1055,7 @@ const en = {
     duplicateSuccess: "Email template duplicated successfully",
     testEmailSent: "Test email sent successfully",
     testEmailFailed: "Failed to send test email",
-    
+
     // Validation messages
     pleaseEnterName: "Please enter template name",
     pleaseEnterDescription: "Please enter description",
@@ -1064,7 +1066,7 @@ const en = {
     pleaseSelectTemplateType: "Please select template type",
     nameAlreadyExists: "Template name already exists",
     invalidEmailContent: "Invalid email content",
-    
+
     // Preview and test
     previewMode: "Preview Mode",
     testEmailTitle: "Send Test Email",
@@ -1072,14 +1074,14 @@ const en = {
     recipientEmail: "Recipient Email",
     sendTestEmail: "Send Test",
     sending: "Sending...",
-    
+
     // Template editor
     editorToolbar: "Editor Toolbar",
     formatText: "Format Text",
     insertImage: "Insert Image",
     insertLink: "Insert Link",
     insertTable: "Insert Table",
-    
+
     // Statistics
     totalTemplates: "Total Templates",
     activeTemplates: "Active Templates",
@@ -1146,6 +1148,14 @@ const en = {
       "failed": "Failed",
       "unknown": "Unknown"
     }
+  },
+  "fileUpload": {
+    "oversizeTitle": "File too large",
+    "oversizeMessage": "The following files exceed {{size}}MB and will be ignored:\n{{fileNames}}",
+    "confirm": "Continue",
+    "cancel": "Cancel",
+    "selectFiles": "Select attachments",
+    "tooLarge": "File \"{{fileName}}\" exceeds the allowed size ({{size}}MB)."
   }
 };
 
