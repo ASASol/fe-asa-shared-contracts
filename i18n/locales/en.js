@@ -1046,7 +1046,10 @@ const en = {
     "add_bcc_recipient": "Add BCC Recipient",
     "select_all": "Select All",
     "deselect_all": "Deselect All",
-    "send_email": "Send Email"
+    "send_email": "Send Email",
+    "channel": "Channel",
+    "status": "Status",
+    "taskType": "Task Type"
   },
   "customer": {
     "title": "Customer List",
