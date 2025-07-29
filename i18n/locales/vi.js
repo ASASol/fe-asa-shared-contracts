@@ -207,53 +207,77 @@ const vi = {
       "testManagement2": "Quản lý kiểm tra 2"
     }
   },
-  "emailConfig": {
-    "title": "Quản lý Cấu hình Email",
-    "searchPlaceholder": "Tìm kiếm cấu hình email...",
-
-    // Form labels - Updated to match API
-    "smtpServer": "Máy chủ SMTP",
-    "smtpServerPlaceholder": "Ví dụ: smtp.gmail.com",
-    "port": "Cổng",
-    "portPlaceholder": "Ví dụ: 587",
-    "fromEmail": "Email gửi",
-    "fromEmailPlaceholder": "Ví dụ: noreply@company.com",
-    "displayName": "Tên hiển thị",
-    "displayNamePlaceholder": "Ví dụ: Hệ thống ABC",
-    "userName": "Tên đăng nhập",
-    "userNamePlaceholder": "Nhập tên đăng nhập",
-    "password": "Mật khẩu",
-    "passwordPlaceholder": "Nhập mật khẩu",
+  "notificationConfig": {
+    "title": "Quản lý Cấu hình Kênh Thông báo",
+    "searchPlaceholder": "Tìm kiếm cấu hình thông báo...",
+    
+    // Basic form labels
+    "configName": "Tên cấu hình",
+    "configNamePlaceholder": "Ví dụ: Mail thông báo khách hàng",
+    "channel": "Kênh thông báo",
+    "selectChannel": "Chọn kênh thông báo",
     "isDefault": "Mặc định",
     "default": "Mặc định",
     "toggleDefault": "Click để thay đổi trạng thái mặc định",
     "updateDefaultSuccess": "Cập nhật trạng thái mặc định thành công",
 
+    // Email configuration labels
+    "emailSmtpServer": "Máy chủ SMTP",
+    "emailSmtpServerPlaceholder": "Ví dụ: smtp.gmail.com",
+    "emailPort": "Cổng",
+    "emailPortPlaceholder": "Ví dụ: 587",
+    "emailFrom": "Email gửi",
+    "emailFromPlaceholder": "Ví dụ: noreply@company.com",
+    "emailDisplayName": "Tên hiển thị",
+    "emailDisplayNamePlaceholder": "Ví dụ: ASA Soft – Thông báo hệ thống",
+    "emailUserName": "Tên đăng nhập",
+    "emailUserNamePlaceholder": "Nhập tên đăng nhập/email",
+    "emailPassword": "Mật khẩu",
+    "emailPasswordPlaceholder": "Nhập mật khẩu",
+    "emailEnableSsl": "Kích hoạt SSL",
+
+    // SMS configuration labels
+    "smsProvider": "Nhà cung cấp SMS",
+    "smsProviderPlaceholder": "Ví dụ: Twilio, AWS SNS, Vonage",
+    "smsApiKey": "Khóa API",
+    "smsApiKeyPlaceholder": "Nhập khóa API",
+
+    // Table column headers
+    "channel": "Kênh",
+    "configuration": "Cấu hình",
+    "emailInfo": "Thông tin Email",
+    "credentials": "Thông tin xác thực",
+
     // Actions
-    "addNewEmailConfig": "Thêm cấu hình email mới",
-    "editEmailConfig": "Sửa cấu hình email",
+    "addNewNotificationConfig": "Thêm cấu hình thông báo mới",
+    "editNotificationConfig": "Sửa cấu hình thông báo",
     "confirmDelete": "Xác nhận xóa",
-    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình email \"{{name}}\" không?",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa cấu hình thông báo \"{{name}}\" không?",
 
     // Messages
-    "addSuccess": "Thêm cấu hình email thành công",
-    "updateSuccess": "Cập nhật cấu hình email thành công",
-    "deleteSuccess": "Xóa cấu hình email thành công",
+    "addSuccess": "Thêm cấu hình thông báo thành công",
+    "updateSuccess": "Cập nhật cấu hình thông báo thành công",
+    "deleteSuccess": "Xóa cấu hình thông báo thành công",
 
-    // Validation messages - Updated
+    // Validation messages
+    "pleaseEnterConfigName": "Vui lòng nhập tên cấu hình",
+    "pleaseSelectChannel": "Vui lòng chọn kênh thông báo",
     "pleaseEnterSmtpServer": "Vui lòng nhập máy chủ SMTP",
     "pleaseEnterPort": "Vui lòng nhập cổng",
     "pleaseEnterFromEmail": "Vui lòng nhập email gửi",
     "pleaseEnterDisplayName": "Vui lòng nhập tên hiển thị",
     "pleaseEnterUserName": "Vui lòng nhập tên đăng nhập",
     "pleaseEnterPassword": "Vui lòng nhập mật khẩu",
+    "pleaseEnterSmsProvider": "Vui lòng nhập nhà cung cấp SMS",
+    "pleaseEnterSmsApiKey": "Vui lòng nhập khóa API SMS",
     "invalidEmailFormat": "Định dạng email không hợp lệ",
     "invalidPortRange": "Cổng phải trong khoảng từ 1 đến 65535",
 
     // Loading states
-    "loadingEmailConfigs": "Đang tải danh sách cấu hình email...",
-    "cannotLoadEmailConfigs": "Không thể tải danh sách cấu hình email",
+    "loadingConfigs": "Đang tải danh sách cấu hình thông báo...",
+    "cannotLoadConfigs": "Không thể tải danh sách cấu hình thông báo",
 
+    // Send sample email functionality
     "sendSampleEmail": "Gửi email mẫu",
     "sendSampleEmailTo": "Gửi email mẫu từ",
     "recipientEmail": "Email người nhận",
@@ -261,7 +285,47 @@ const vi = {
     "sendSample": "Gửi mẫu",
     "sending": "Đang gửi...",
     "sampleEmailSent": "Gửi email mẫu thành công",
-    "sampleEmailFailed": "Gửi email mẫu thất bại"
+    "sampleEmailFailed": "Gửi email mẫu thất bại",
+    "onlyEmailChannelSupported": "Chỉ hỗ trợ gửi email mẫu cho kênh Email",
+
+    // Channel types
+    "channelEmail": "Email",
+    "channelSms": "SMS",
+    
+    // Help text
+    "emailConfigHelp": "Cấu hình SMTP cho thông báo qua email",
+    "smsConfigHelp": "Cấu hình nhà cung cấp SMS cho thông báo qua tin nhắn",
+    "defaultConfigHelp": "Đánh dấu làm cấu hình mặc định cho loại kênh này",
+    
+    // Status messages
+    "configurationActive": "Hoạt động",
+    "configurationInactive": "Không hoạt động",
+    
+    // Additional validation
+    "configNameRequired": "Tên cấu hình là bắt buộc",
+    "channelRequired": "Phải chọn kênh thông báo",
+    "emailConfigurationRequired": "Cấu hình email là bắt buộc cho kênh Email",
+    "smsConfigurationRequired": "Cấu hình SMS là bắt buộc cho kênh SMS",
+    
+    // Import/Export (if needed)
+    "exportConfigurations": "Xuất cấu hình",
+    "importConfigurations": "Nhập cấu hình",
+    
+    // Bulk actions (if needed)
+    "bulkDelete": "Xóa hàng loạt",
+    "selectAll": "Chọn tất cả",
+    "selectedItems": "Đã chọn {{count}} mục",
+    
+    // Error messages
+    "errorLoadingData": "Lỗi khi tải danh sách cấu hình thông báo",
+    "errorSavingConfig": "Lỗi khi lưu cấu hình",
+    "errorDeletingConfig": "Lỗi khi xóa cấu hình",
+    "errorSendingSample": "Lỗi khi gửi thông báo mẫu",
+    
+    // Success confirmations
+    "configSavedSuccessfully": "Lưu cấu hình thành công",
+    "configDeletedSuccessfully": "Xóa cấu hình thành công",
+    "sampleSentSuccessfully": "Gửi thông báo mẫu thành công"
   },
   "permissionGroupTypes": {
     "title": "Danh sách loại nhóm quyền",
@@ -682,31 +746,31 @@ const vi = {
     "descriptionPlaceholder": "Nhập mô tả",
     "detailTitle": "Chi tiết cấu hình người dùng"
   },
-  "emailTemplate": {
+ "notificationTemplate": {
     // Basic info
-    "title": "Quản lý Mẫu Email",
-    "searchPlaceholder": "Tìm kiếm mẫu email...",
-
+    "title": "Quản lý Mẫu Thông báo",
+    "searchPlaceholder": "Tìm kiếm mẫu thông báo...",
+    
     // Form labels
     "name": "Tên mẫu",
     "namePlaceholder": "Nhập tên mẫu",
     "description": "Mô tả",
     "descriptionPlaceholder": "Nhập mô tả mẫu",
-    "descriptionHint": "Mô tả mục đích sử dụng của mẫu email này",
+    "descriptionHint": "Mô tả mục đích sử dụng của mẫu thông báo này",
     "templateGroup": "Nhóm mẫu",
     "selectTemplateGroup": "Chọn nhóm mẫu...",
     "language": "Ngôn ngữ",
     "selectLanguage": "Chọn ngôn ngữ...",
-    "templateType": "Loại mẫu",
-    "selectTemplateType": "Chọn loại mẫu...",
+    "channel": "Kênh thông báo",
+    "selectChannel": "Chọn kênh thông báo...",
     "isDefault": "Mẫu mặc định",
-
-    // Email content fields
-    "bodyTemplate": "Nội dung email",
-    "bodyTemplatePlaceholder": "Nhập nội dung email...",
-    "subject": "Tiêu đề email",
-    "subjectPlaceholder": "Nhập tiêu đề email",
-
+    
+    // Content fields
+    "content": "Nội dung thông báo",
+    "contentPlaceholder": "Nhập nội dung thông báo...",
+    "subject": "Tiêu đề",
+    "subjectPlaceholder": "Nhập tiêu đề",
+    
     // Placeholder system
     "placeholders": "Placeholder khả dụng",
     "noPlaceholders": "Không có placeholder nào",
@@ -714,37 +778,34 @@ const vi = {
     "insertPlaceholder": "Chèn placeholder",
 
     // Template Groups
-    "marketing": "Marketing",
-    "notification": "Thông báo",
-    "transactional": "Giao dịch",
-    "system": "Hệ thống",
-    "welcome": "Chào mừng",
-
-    // Languages
-    "vietnamese": "Tiếng Việt",
-    "english": "Tiếng Anh",
-
-    // Template Types
     "systemNotification": "Thông báo hệ thống",
     "birthday": "Chúc mừng sinh nhật",
     "emailConfirmation": "Xác nhận email",
     "customerAccepted": "Chấp nhận khách hàng",
     "passwordRecovery": "Khôi phục mật khẩu",
-    "welcomeEmail": "Email chào mừng",
-    "orderConfirmation": "Xác nhận đơn hàng",
-    "invoiceEmail": "Hóa đơn điện tử",
-    "promotionalEmail": "Email khuyến mãi",
-    "newsletterEmail": "Bản tin",
-
+    "welcome": "Chào mừng",
+    "marketing": "Marketing",
+    "transactional": "Giao dịch",
+    
+    // Languages
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh",
+    
+    // Channels
+    "email": "Email",
+    "sms": "SMS",
+    "pushNotification": "Push Notification",
+    "inApp": "Thông báo trong ứng dụng",
+    
     // Actions
-    "addNewEmailTemplate": "Thêm mẫu email mới",
-    "editEmailTemplate": "Sửa mẫu email",
+    "addNewNotificationTemplate": "Thêm mẫu thông báo mới",
+    "editNotificationTemplate": "Sửa mẫu thông báo",
     "duplicateTemplate": "Nhân bản mẫu",
     "previewTemplate": "Xem trước mẫu",
     "testTemplate": "Gửi thử mẫu",
     "confirmDelete": "Xác nhận xóa",
-    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu email \"{name}\" không?",
-
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu thông báo \"{name}\" không?",
+    
     // Status and states
     "active": "Đang hoạt động",
     "inactive": "Không hoạt động",
@@ -752,30 +813,32 @@ const vi = {
     "published": "Đã xuất bản",
 
     // Messages
-    "addSuccess": "Thêm mẫu email thành công",
-    "updateSuccess": "Cập nhật mẫu email thành công",
-    "deleteSuccess": "Xóa mẫu email thành công",
-    "duplicateSuccess": "Nhân bản mẫu email thành công",
-    "testEmailSent": "Gửi email thử nghiệm thành công",
-    "testEmailFailed": "Gửi email thử nghiệm thất bại",
-
+    "addSuccess": "Thêm mẫu thông báo thành công",
+    "updateSuccess": "Cập nhật mẫu thông báo thành công",
+    "deleteSuccess": "Xóa mẫu thông báo thành công",
+    "duplicateSuccess": "Nhân bản mẫu thông báo thành công",
+    "testNotificationSent": "Gửi thông báo thử nghiệm thành công",
+    "testNotificationFailed": "Gửi thông báo thử nghiệm thất bại",
+    
     // Validation messages
     "pleaseEnterName": "Vui lòng nhập tên mẫu",
     "pleaseEnterDescription": "Vui lòng nhập mô tả",
-    "pleaseEnterSubject": "Vui lòng nhập tiêu đề email",
-    "pleaseEnterBodyTemplate": "Vui lòng nhập nội dung email",
+    "pleaseEnterSubject": "Vui lòng nhập tiêu đề",
+    "pleaseEnterContent": "Vui lòng nhập nội dung thông báo",
     "pleaseSelectTemplateGroup": "Vui lòng chọn nhóm mẫu",
     "pleaseSelectLanguage": "Vui lòng chọn ngôn ngữ",
-    "pleaseSelectTemplateType": "Vui lòng chọn loại mẫu",
+    "pleaseSelectChannel": "Vui lòng chọn kênh thông báo",
     "nameAlreadyExists": "Tên mẫu đã tồn tại",
-    "invalidEmailContent": "Nội dung email không hợp lệ",
-
+    "invalidContent": "Nội dung thông báo không hợp lệ",
+    
     // Preview and test
     "previewMode": "Chế độ xem trước",
-    "testEmailTitle": "Gửi email thử nghiệm",
-    "testEmailDescription": "Nhập email để nhận mẫu thử nghiệm",
+    "testNotificationTitle": "Gửi thông báo thử nghiệm",
+    "testNotificationDescription": "Nhập thông tin người nhận để gửi mẫu thử nghiệm",
     "recipientEmail": "Email người nhận",
-    "sendTestEmail": "Gửi thử nghiệm",
+    "recipientPhone": "Số điện thoại người nhận",
+    "recipientUser": "Người dùng nhận",
+    "sendTest": "Gửi thử nghiệm",
     "sending": "Đang gửi...",
 
     // Template editor
@@ -789,7 +852,36 @@ const vi = {
     "totalTemplates": "Tổng số mẫu",
     "activeTemplates": "Mẫu đang hoạt động",
     "draftTemplates": "Mẫu nháp",
-    "mostUsedTemplate": "Mẫu được sử dụng nhiều nhất"
+    "mostUsedTemplate": "Mẫu được sử dụng nhiều nhất",
+    "emailTemplates": "Mẫu Email",
+    "smsTemplates": "Mẫu SMS",
+    "pushTemplates": "Mẫu Push",
+    "inAppTemplates": "Mẫu thông báo trong ứng dụng",
+    
+    // Channel specific
+    "emailSpecific": {
+        "subject": "Tiêu đề email",
+        "htmlContent": "Nội dung HTML",
+        "textContent": "Nội dung văn bản",
+        "attachments": "Tệp đính kèm"
+    },
+    "smsSpecific": {
+        "messageContent": "Nội dung tin nhắn",
+        "maxLength": "Tối đa 160 ký tự",
+        "unicodeSupport": "Hỗ trợ Unicode"
+    },
+    "pushSpecific": {
+        "title": "Tiêu đề Push",
+        "body": "Nội dung Push",
+        "icon": "URL biểu tượng",
+        "clickAction": "Hành động khi nhấn"
+    },
+    "inAppSpecific": {
+        "title": "Tiêu đề thông báo",
+        "message": "Nội dung thông báo",
+        "actionButtons": "Nút hành động",
+        "priority": "Độ ưu tiên"
+    }
   },
   "send_email": {
     "customer_list": "Danh sách khách hàng",

@@ -176,30 +176,30 @@ const en = {
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete branch \"{{name}}\"? This action cannot be undone."
   },
-  "emailTemplate": {
+  "notificationTemplate": {
     // Basic info
-    "title": "Email Template Management",
-    "searchPlaceholder": "Search email templates...",
+    "title": "Notification Template Management",
+    "searchPlaceholder": "Search notification templates...",
 
     // Form labels
     "name": "Template Name",
     "namePlaceholder": "Enter template name",
     "description": "Description",
     "descriptionPlaceholder": "Enter template description",
-    "descriptionHint": "Describe the purpose of this email template",
+    "descriptionHint": "Describe the purpose of this notification template",
     "templateGroup": "Template Group",
     "selectTemplateGroup": "Select template group...",
     "language": "Language",
     "selectLanguage": "Select language...",
-    "templateType": "Template Type",
-    "selectTemplateType": "Select template type...",
+    "channel": "Channel",
+    "selectChannel": "Select channel...",
     "isDefault": "Default Template",
 
-    // Email content fields
-    "bodyTemplate": "Email Content",
-    "bodyTemplatePlaceholder": "Enter email content...",
-    "subject": "Email Subject",
-    "subjectPlaceholder": "Enter email subject",
+    // Content fields
+    "content": "Notification Content",
+    "contentPlaceholder": "Enter notification content...",
+    "subject": "Subject",
+    "subjectPlaceholder": "Enter subject",
 
     // Placeholder system
     "placeholders": "Available Placeholders",
@@ -208,36 +208,33 @@ const en = {
     "insertPlaceholder": "Insert Placeholder",
 
     // Template Groups
-    "marketing": "Marketing",
-    "notification": "Notification",
-    "transactional": "Transactional",
-    "system": "System",
-    "welcome": "Welcome",
-
-    // Languages
-    "vietnamese": "Vietnamese",
-    "english": "English",
-
-    // Template Types
     "systemNotification": "System Notification",
     "birthday": "Birthday Greeting",
     "emailConfirmation": "Email Confirmation",
     "customerAccepted": "Customer Accepted",
     "passwordRecovery": "Password Recovery",
-    "welcomeEmail": "Welcome Email",
-    "orderConfirmation": "Order Confirmation",
-    "invoiceEmail": "Invoice Email",
-    "promotionalEmail": "Promotional Email",
-    "newsletterEmail": "Newsletter",
+    "welcome": "Welcome",
+    "marketing": "Marketing",
+    "transactional": "Transactional",
+
+    // Languages
+    "vietnamese": "Vietnamese",
+    "english": "English",
+
+    // Channels
+    "email": "Email",
+    "sms": "SMS",
+    "pushNotification": "Push Notification",
+    "inApp": "In-App",
 
     // Actions
-    "addNewEmailTemplate": "Add New Email Template",
-    "editEmailTemplate": "Edit Email Template",
+    "addNewNotificationTemplate": "Add New Notification Template",
+    "editNotificationTemplate": "Edit Notification Template",
     "duplicateTemplate": "Duplicate Template",
     "previewTemplate": "Preview Template",
     "testTemplate": "Test Template",
     "confirmDelete": "Confirm Delete",
-    "confirmDeleteMessage": "Are you sure you want to delete email template \"{name}\"?",
+    "confirmDeleteMessage": "Are you sure you want to delete notification template \"{name}\"?",
 
     // Status and states
     "active": "Active",
@@ -246,30 +243,32 @@ const en = {
     "published": "Published",
 
     // Messages
-    "addSuccess": "Email template added successfully",
-    "updateSuccess": "Email template updated successfully",
-    "deleteSuccess": "Email template deleted successfully",
-    "duplicateSuccess": "Email template duplicated successfully",
-    "testEmailSent": "Test email sent successfully",
-    "testEmailFailed": "Failed to send test email",
+    "addSuccess": "Notification template added successfully",
+    "updateSuccess": "Notification template updated successfully",
+    "deleteSuccess": "Notification template deleted successfully",
+    "duplicateSuccess": "Notification template duplicated successfully",
+    "testNotificationSent": "Test notification sent successfully",
+    "testNotificationFailed": "Failed to send test notification",
 
     // Validation messages
     "pleaseEnterName": "Please enter template name",
     "pleaseEnterDescription": "Please enter description",
-    "pleaseEnterSubject": "Please enter email subject",
-    "pleaseEnterBodyTemplate": "Please enter email content",
+    "pleaseEnterSubject": "Please enter subject",
+    "pleaseEnterContent": "Please enter notification content",
     "pleaseSelectTemplateGroup": "Please select template group",
     "pleaseSelectLanguage": "Please select language",
-    "pleaseSelectTemplateType": "Please select template type",
+    "pleaseSelectChannel": "Please select channel",
     "nameAlreadyExists": "Template name already exists",
-    "invalidEmailContent": "Invalid email content",
+    "invalidContent": "Invalid notification content",
 
     // Preview and test
     "previewMode": "Preview Mode",
-    "testEmailTitle": "Send Test Email",
-    "testEmailDescription": "Enter email address to receive test template",
+    "testNotificationTitle": "Send Test Notification",
+    "testNotificationDescription": "Enter recipient information to receive test template",
     "recipientEmail": "Recipient Email",
-    "sendTestEmail": "Send Test",
+    "recipientPhone": "Recipient Phone",
+    "recipientUser": "Recipient User",
+    "sendTest": "Send Test",
     "sending": "Sending...",
 
     // Template editor
@@ -283,7 +282,36 @@ const en = {
     "totalTemplates": "Total Templates",
     "activeTemplates": "Active Templates",
     "draftTemplates": "Draft Templates",
-    "mostUsedTemplate": "Most Used Template"
+    "mostUsedTemplate": "Most Used Template",
+    "emailTemplates": "Email Templates",
+    "smsTemplates": "SMS Templates",
+    "pushTemplates": "Push Templates",
+    "inAppTemplates": "In-App Templates",
+
+    // Channel specific
+    "emailSpecific": {
+        "subject": "Email Subject",
+        "htmlContent": "HTML Content",
+        "textContent": "Text Content",
+        "attachments": "Attachments"
+    },
+    "smsSpecific": {
+        "messageContent": "SMS Message",
+        "maxLength": "Max 160 characters",
+        "unicodeSupport": "Unicode Support"
+    },
+    "pushSpecific": {
+        "title": "Push Title",
+        "body": "Push Body",
+        "icon": "Icon URL",
+        "clickAction": "Click Action"
+    },
+    "inAppSpecific": {
+        "title": "In-App Title",
+        "message": "In-App Message",
+        "actionButtons": "Action Buttons",
+        "priority": "Priority"
+    }
   },
 
   "functions": {
@@ -320,54 +348,79 @@ const en = {
     }
   },
 
-  "emailConfig": {
-    "title": "Email Configuration Management",
-    "searchPlaceholder": "Search email configurations...",
 
+  "notificationConfig": {
+    "title": "Notification Channel Configuration Management",
+    "searchPlaceholder": "Search notification configurations...",
+    
+    // Basic form labels
+    "configName": "Configuration Name",
+    "configNamePlaceholder": "e.g., Customer Notification Email",
+    "channel": "Notification Channel",
+    "selectChannel": "Select notification channel",
 
-    // Form labels - Updated to match API
-    "smtpServer": "SMTP Server",
-    "smtpServerPlaceholder": "e.g., smtp.gmail.com",
-    "port": "Port",
-    "portPlaceholder": "e.g., 587",
-    "fromEmail": "From Email",
-    "fromEmailPlaceholder": "e.g., noreply@company.com",
-    "displayName": "Display Name",
-    "displayNamePlaceholder": "e.g., ABC System",
-    "userName": "Username",
-    "userNamePlaceholder": "Enter username",
-    "password": "Password",
-    "passwordPlaceholder": "Enter password",
     "isDefault": "Default",
     "default": "Default",
     "toggleDefault": "Click to toggle default status",
     "updateDefaultSuccess": "Default status updated successfully",
 
+    // Email configuration labels
+    "emailSmtpServer": "SMTP Server",
+    "emailSmtpServerPlaceholder": "e.g., smtp.gmail.com",
+    "emailPort": "Port",
+    "emailPortPlaceholder": "e.g., 587",
+    "emailFrom": "From Email",
+    "emailFromPlaceholder": "e.g., noreply@company.com",
+    "emailDisplayName": "Display Name",
+    "emailDisplayNamePlaceholder": "e.g., ASA Soft - System Notifications",
+    "emailUserName": "Username",
+    "emailUserNamePlaceholder": "Enter username/email",
+    "emailPassword": "Password",
+    "emailPasswordPlaceholder": "Enter password",
+    "emailEnableSsl": "Enable SSL",
+
+    // SMS configuration labels
+    "smsProvider": "SMS Provider",
+    "smsProviderPlaceholder": "e.g., Twilio, AWS SNS, Vonage",
+    "smsApiKey": "API Key",
+    "smsApiKeyPlaceholder": "Enter API key",
+
+    // Table column headers
+    "channel": "Channel",
+    "configuration": "Configuration",
+    "emailInfo": "Email Information",
+    "credentials": "Credentials",
+
     // Actions
-    "addNewEmailConfig": "Add New Email Configuration",
-    "editEmailConfig": "Edit Email Configuration",
+    "addNewNotificationConfig": "Add New Notification Configuration",
+    "editNotificationConfig": "Edit Notification Configuration",
     "confirmDelete": "Confirm Delete",
-    "confirmDeleteMessage": "Are you sure you want to delete email configuration \"{{name}}\"?",
+    "confirmDeleteMessage": "Are you sure you want to delete notification configuration \"{{name}}\"?",
 
     // Messages
-    "addSuccess": "Email configuration added successfully",
-    "updateSuccess": "Email configuration updated successfully",
-    "deleteSuccess": "Email configuration deleted successfully",
+    "addSuccess": "Notification configuration added successfully",
+    "updateSuccess": "Notification configuration updated successfully",
+    "deleteSuccess": "Notification configuration deleted successfully",
 
-    // Validation messages - Updated
+    // Validation messages
+    "pleaseEnterConfigName": "Please enter configuration name",
+    "pleaseSelectChannel": "Please select notification channel",
     "pleaseEnterSmtpServer": "Please enter SMTP server",
     "pleaseEnterPort": "Please enter port",
     "pleaseEnterFromEmail": "Please enter from email",
     "pleaseEnterDisplayName": "Please enter display name",
     "pleaseEnterUserName": "Please enter username",
     "pleaseEnterPassword": "Please enter password",
+    "pleaseEnterSmsProvider": "Please enter SMS provider",
+    "pleaseEnterSmsApiKey": "Please enter SMS API key",
     "invalidEmailFormat": "Invalid email format",
     "invalidPortRange": "Port must be between 1 and 65535",
 
     // Loading states
-    "loadingEmailConfigs": "Loading email configurations...",
-    "cannotLoadEmailConfigs": "Cannot load email configurations",
+    "loadingConfigs": "Loading notification configurations...",
+    "cannotLoadConfigs": "Cannot load notification configurations",
 
+    // Send sample email functionality
     "sendSampleEmail": "Send Sample Email",
     "sendSampleEmailTo": "Send sample email from",
     "recipientEmail": "Recipient Email",
@@ -375,7 +428,47 @@ const en = {
     "sendSample": "Send Sample",
     "sending": "Sending...",
     "sampleEmailSent": "Sample email sent successfully",
-    "sampleEmailFailed": "Failed to send sample email"
+    "sampleEmailFailed": "Failed to send sample email",
+    "onlyEmailChannelSupported": "Sample email only supported for Email channels",
+
+    // Channel types
+    "channelEmail": "Email",
+    "channelSms": "SMS",
+    
+    // Help text
+    "emailConfigHelp": "Configure SMTP settings for email notifications",
+    "smsConfigHelp": "Configure SMS provider settings for SMS notifications",
+    "defaultConfigHelp": "Mark as default configuration for this channel type",
+    
+    // Status messages
+    "configurationActive": "Active",
+    "configurationInactive": "Inactive",
+    
+    // Additional validation
+    "configNameRequired": "Configuration name is required",
+    "channelRequired": "Channel selection is required",
+    "emailConfigurationRequired": "Email configuration is required for Email channel",
+    "smsConfigurationRequired": "SMS configuration is required for SMS channel",
+    
+    // Import/Export (if needed)
+    "exportConfigurations": "Export Configurations",
+    "importConfigurations": "Import Configurations",
+    
+    // Bulk actions (if needed)
+    "bulkDelete": "Bulk Delete",
+    "selectAll": "Select All",
+    "selectedItems": "{{count}} items selected",
+    
+    // Error messages
+    "errorLoadingData": "Error loading notification configurations",
+    "errorSavingConfig": "Error saving configuration",
+    "errorDeletingConfig": "Error deleting configuration",
+    "errorSendingSample": "Error sending sample notification",
+    
+    // Success confirmations
+    "configSavedSuccessfully": "Configuration saved successfully",
+    "configDeletedSuccessfully": "Configuration deleted successfully",
+    "sampleSentSuccessfully": "Sample notification sent successfully"
   },
   "permissionGroupTypes": {
     "title": "Permission Group Types List",
