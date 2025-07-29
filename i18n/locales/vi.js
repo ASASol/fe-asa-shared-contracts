@@ -1027,7 +1027,8 @@ const vi = {
     "send_email": "Gửi Email",
     "channel": "Kênh gửi",
     "status": "Trạng thái",
-    "taskType": "Loại tác vụ"
+    "taskType": "Loại tác vụ",
+    "channel_filter_label": "Kênh gửi"
   },
   "customer": {
     "title": "Danh sách khách hàng",
