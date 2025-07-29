@@ -175,36 +175,36 @@ const vi = {
     "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa chi nhánh \"{{name}}\"? Hành động này không thể hoàn tác."
   },
   "functions": {
-  "title": "Danh sách Functions",
-  "functionName": "Tên Function",
-  "functionCode": "Function Code",
-  "subsystem": "Phân hệ",
-  "functionNamePlaceholder": "Nhập tên function",
-  "selectFunctionCode": "Chọn function code",
-  "selectSubsystem": "Chọn phân hệ",
-  "loadingSubsystems": "Đang tải phân hệ...",
-  "noSubsystems": "Không có phân hệ nào",
-  "addNewFunction": "Thêm Function Mới",
-  "editFunction": "Sửa Function",
-  "searchPlaceholder": "Tên function",
-  "addSuccess": "Thêm mới thành công",
-  "updateSuccess": "Cập nhật thành công",
-  "deleteSuccess": "Xóa thành công",
-  "pleaseEnterFunctionName": "Vui lòng nhập tên function",
-  "pleaseSelectFunctionCode": "Vui lòng chọn function code",
-  "pleaseSelectSubsystem": "Vui lòng chọn phân hệ",
-  "pleaseSelectModule": "Vui lòng chọn module",
-  "confirmDelete": "Xác nhận xóa",
-  "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa function \"{{name}}\"? Hành động này không thể hoàn tác.",
-  "cannotLoadSubsystems": "Không thể tải danh sách phân hệ. Vui lòng thử lại.",
-  "functionCodes": {
-    "roleManagement": "Quản lý vai trò",
-    "superPermissionManagement": "Quyền Super Admin",
-    "permissionManagement": "Quản lý phân quyền",
-    "userManagement": "Quản lý người dùng",
-    "customerManagement": "Quản lý khách hàng",
-    "testManagement": "Quản lý kiểm tra",
-    "testManagement2": "Quản lý kiểm tra 2"
+    "title": "Danh sách Functions",
+    "functionName": "Tên Function",
+    "functionCode": "Function Code",
+    "subsystem": "Phân hệ",
+    "functionNamePlaceholder": "Nhập tên function",
+    "selectFunctionCode": "Chọn function code",
+    "selectSubsystem": "Chọn phân hệ",
+    "loadingSubsystems": "Đang tải phân hệ...",
+    "noSubsystems": "Không có phân hệ nào",
+    "addNewFunction": "Thêm Function Mới",
+    "editFunction": "Sửa Function",
+    "searchPlaceholder": "Tên function",
+    "addSuccess": "Thêm mới thành công",
+    "updateSuccess": "Cập nhật thành công",
+    "deleteSuccess": "Xóa thành công",
+    "pleaseEnterFunctionName": "Vui lòng nhập tên function",
+    "pleaseSelectFunctionCode": "Vui lòng chọn function code",
+    "pleaseSelectSubsystem": "Vui lòng chọn phân hệ",
+    "pleaseSelectModule": "Vui lòng chọn module",
+    "confirmDelete": "Xác nhận xóa",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa function \"{{name}}\"? Hành động này không thể hoàn tác.",
+    "cannotLoadSubsystems": "Không thể tải danh sách phân hệ. Vui lòng thử lại.",
+    "functionCodes": {
+      "roleManagement": "Quản lý vai trò",
+      "superPermissionManagement": "Quyền Super Admin",
+      "permissionManagement": "Quản lý phân quyền",
+      "userManagement": "Quản lý người dùng",
+      "customerManagement": "Quản lý khách hàng",
+      "testManagement": "Quản lý kiểm tra",
+      "testManagement2": "Quản lý kiểm tra 2"
     }
   },
   "notificationConfig": {
@@ -776,7 +776,7 @@ const vi = {
     "noPlaceholders": "Không có placeholder nào",
     "placeholderHint": "Sử dụng các placeholder để tự động thay thế dữ liệu",
     "insertPlaceholder": "Chèn placeholder",
-    
+
     // Template Groups
     "systemNotification": "Thông báo hệ thống",
     "birthday": "Chúc mừng sinh nhật",
@@ -811,7 +811,7 @@ const vi = {
     "inactive": "Không hoạt động",
     "draft": "Bản nháp",
     "published": "Đã xuất bản",
-    
+
     // Messages
     "addSuccess": "Thêm mẫu thông báo thành công",
     "updateSuccess": "Cập nhật mẫu thông báo thành công",
@@ -840,14 +840,14 @@ const vi = {
     "recipientUser": "Người dùng nhận",
     "sendTest": "Gửi thử nghiệm",
     "sending": "Đang gửi...",
-    
+
     // Template editor
     "editorToolbar": "Thanh công cụ",
     "formatText": "Định dạng văn bản",
     "insertImage": "Chèn hình ảnh",
     "insertLink": "Chèn liên kết",
     "insertTable": "Chèn bảng",
-    
+
     // Statistics
     "totalTemplates": "Tổng số mẫu",
     "activeTemplates": "Mẫu đang hoạt động",
@@ -972,7 +972,7 @@ const vi = {
     "long": "Số nguyên dài",
     "double": "Số thực",
     "datetime": "Ngày giờ",
-    "guid": "GUID", 
+    "guid": "GUID",
     "byte": "Byte",
     "char": "Ký tự",
     "float": "Số thực",
@@ -1024,7 +1024,10 @@ const vi = {
     "add_bcc_recipient": "Thêm người nhận BCC",
     "select_all": "Chọn tất cả",
     "deselect_all": "Bỏ chọn tất cả",
-    "send_email": "Gửi Email"
+    "send_email": "Gửi Email",
+    "channel": "Kênh gửi",
+    "status": "Trạng thái",
+    "taskType": "Loại tác vụ"
   },
   "customer": {
     "title": "Danh sách khách hàng",
