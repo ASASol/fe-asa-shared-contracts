@@ -176,30 +176,30 @@ const en = {
     "confirmDelete": "Confirm Delete",
     "confirmDeleteMessage": "Are you sure you want to delete branch \"{{name}}\"? This action cannot be undone."
   },
-  "emailTemplate": {
+  "notificationTemplate": {
     // Basic info
-    "title": "Email Template Management",
-    "searchPlaceholder": "Search email templates...",
+    "title": "Notification Template Management",
+    "searchPlaceholder": "Search notification templates...",
 
     // Form labels
     "name": "Template Name",
     "namePlaceholder": "Enter template name",
     "description": "Description",
     "descriptionPlaceholder": "Enter template description",
-    "descriptionHint": "Describe the purpose of this email template",
+    "descriptionHint": "Describe the purpose of this notification template",
     "templateGroup": "Template Group",
     "selectTemplateGroup": "Select template group...",
     "language": "Language",
     "selectLanguage": "Select language...",
-    "templateType": "Template Type",
-    "selectTemplateType": "Select template type...",
+    "channel": "Channel",
+    "selectChannel": "Select channel...",
     "isDefault": "Default Template",
 
-    // Email content fields
-    "bodyTemplate": "Email Content",
-    "bodyTemplatePlaceholder": "Enter email content...",
-    "subject": "Email Subject",
-    "subjectPlaceholder": "Enter email subject",
+    // Content fields
+    "content": "Notification Content",
+    "contentPlaceholder": "Enter notification content...",
+    "subject": "Subject",
+    "subjectPlaceholder": "Enter subject",
 
     // Placeholder system
     "placeholders": "Available Placeholders",
@@ -208,36 +208,33 @@ const en = {
     "insertPlaceholder": "Insert Placeholder",
 
     // Template Groups
-    "marketing": "Marketing",
-    "notification": "Notification",
-    "transactional": "Transactional",
-    "system": "System",
-    "welcome": "Welcome",
-
-    // Languages
-    "vietnamese": "Vietnamese",
-    "english": "English",
-
-    // Template Types
     "systemNotification": "System Notification",
     "birthday": "Birthday Greeting",
     "emailConfirmation": "Email Confirmation",
     "customerAccepted": "Customer Accepted",
     "passwordRecovery": "Password Recovery",
-    "welcomeEmail": "Welcome Email",
-    "orderConfirmation": "Order Confirmation",
-    "invoiceEmail": "Invoice Email",
-    "promotionalEmail": "Promotional Email",
-    "newsletterEmail": "Newsletter",
+    "welcome": "Welcome",
+    "marketing": "Marketing",
+    "transactional": "Transactional",
+
+    // Languages
+    "vietnamese": "Vietnamese",
+    "english": "English",
+
+    // Channels
+    "email": "Email",
+    "sms": "SMS",
+    "pushNotification": "Push Notification",
+    "inApp": "In-App",
 
     // Actions
-    "addNewEmailTemplate": "Add New Email Template",
-    "editEmailTemplate": "Edit Email Template",
+    "addNewNotificationTemplate": "Add New Notification Template",
+    "editNotificationTemplate": "Edit Notification Template",
     "duplicateTemplate": "Duplicate Template",
     "previewTemplate": "Preview Template",
     "testTemplate": "Test Template",
     "confirmDelete": "Confirm Delete",
-    "confirmDeleteMessage": "Are you sure you want to delete email template \"{name}\"?",
+    "confirmDeleteMessage": "Are you sure you want to delete notification template \"{name}\"?",
 
     // Status and states
     "active": "Active",
@@ -246,30 +243,32 @@ const en = {
     "published": "Published",
 
     // Messages
-    "addSuccess": "Email template added successfully",
-    "updateSuccess": "Email template updated successfully",
-    "deleteSuccess": "Email template deleted successfully",
-    "duplicateSuccess": "Email template duplicated successfully",
-    "testEmailSent": "Test email sent successfully",
-    "testEmailFailed": "Failed to send test email",
+    "addSuccess": "Notification template added successfully",
+    "updateSuccess": "Notification template updated successfully",
+    "deleteSuccess": "Notification template deleted successfully",
+    "duplicateSuccess": "Notification template duplicated successfully",
+    "testNotificationSent": "Test notification sent successfully",
+    "testNotificationFailed": "Failed to send test notification",
 
     // Validation messages
     "pleaseEnterName": "Please enter template name",
     "pleaseEnterDescription": "Please enter description",
-    "pleaseEnterSubject": "Please enter email subject",
-    "pleaseEnterBodyTemplate": "Please enter email content",
+    "pleaseEnterSubject": "Please enter subject",
+    "pleaseEnterContent": "Please enter notification content",
     "pleaseSelectTemplateGroup": "Please select template group",
     "pleaseSelectLanguage": "Please select language",
-    "pleaseSelectTemplateType": "Please select template type",
+    "pleaseSelectChannel": "Please select channel",
     "nameAlreadyExists": "Template name already exists",
-    "invalidEmailContent": "Invalid email content",
+    "invalidContent": "Invalid notification content",
 
     // Preview and test
     "previewMode": "Preview Mode",
-    "testEmailTitle": "Send Test Email",
-    "testEmailDescription": "Enter email address to receive test template",
+    "testNotificationTitle": "Send Test Notification",
+    "testNotificationDescription": "Enter recipient information to receive test template",
     "recipientEmail": "Recipient Email",
-    "sendTestEmail": "Send Test",
+    "recipientPhone": "Recipient Phone",
+    "recipientUser": "Recipient User",
+    "sendTest": "Send Test",
     "sending": "Sending...",
 
     // Template editor
@@ -283,7 +282,36 @@ const en = {
     "totalTemplates": "Total Templates",
     "activeTemplates": "Active Templates",
     "draftTemplates": "Draft Templates",
-    "mostUsedTemplate": "Most Used Template"
+    "mostUsedTemplate": "Most Used Template",
+    "emailTemplates": "Email Templates",
+    "smsTemplates": "SMS Templates",
+    "pushTemplates": "Push Templates",
+    "inAppTemplates": "In-App Templates",
+
+    // Channel specific
+    "emailSpecific": {
+        "subject": "Email Subject",
+        "htmlContent": "HTML Content",
+        "textContent": "Text Content",
+        "attachments": "Attachments"
+    },
+    "smsSpecific": {
+        "messageContent": "SMS Message",
+        "maxLength": "Max 160 characters",
+        "unicodeSupport": "Unicode Support"
+    },
+    "pushSpecific": {
+        "title": "Push Title",
+        "body": "Push Body",
+        "icon": "Icon URL",
+        "clickAction": "Click Action"
+    },
+    "inAppSpecific": {
+        "title": "In-App Title",
+        "message": "In-App Message",
+        "actionButtons": "Action Buttons",
+        "priority": "Priority"
+    }
   },
 
   "functions": {

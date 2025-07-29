@@ -746,30 +746,30 @@ const vi = {
     "descriptionPlaceholder": "Nhập mô tả",
     "detailTitle": "Chi tiết cấu hình người dùng"
   },
- "emailTemplate": {
+ "notificationTemplate": {
     // Basic info
-    "title": "Quản lý Mẫu Email",
-    "searchPlaceholder": "Tìm kiếm mẫu email...",
+    "title": "Quản lý Mẫu Thông báo",
+    "searchPlaceholder": "Tìm kiếm mẫu thông báo...",
     
     // Form labels
     "name": "Tên mẫu",
     "namePlaceholder": "Nhập tên mẫu",
     "description": "Mô tả",
     "descriptionPlaceholder": "Nhập mô tả mẫu",
-    "descriptionHint": "Mô tả mục đích sử dụng của mẫu email này",
+    "descriptionHint": "Mô tả mục đích sử dụng của mẫu thông báo này",
     "templateGroup": "Nhóm mẫu",
     "selectTemplateGroup": "Chọn nhóm mẫu...",
     "language": "Ngôn ngữ",
     "selectLanguage": "Chọn ngôn ngữ...",
-    "templateType": "Loại mẫu",
-    "selectTemplateType": "Chọn loại mẫu...",
+    "channel": "Kênh thông báo",
+    "selectChannel": "Chọn kênh thông báo...",
     "isDefault": "Mẫu mặc định",
     
-    // Email content fields
-    "bodyTemplate": "Nội dung email",
-    "bodyTemplatePlaceholder": "Nhập nội dung email...",
-    "subject": "Tiêu đề email",
-    "subjectPlaceholder": "Nhập tiêu đề email",
+    // Content fields
+    "content": "Nội dung thông báo",
+    "contentPlaceholder": "Nhập nội dung thông báo...",
+    "subject": "Tiêu đề",
+    "subjectPlaceholder": "Nhập tiêu đề",
     
     // Placeholder system
     "placeholders": "Placeholder khả dụng",
@@ -778,36 +778,33 @@ const vi = {
     "insertPlaceholder": "Chèn placeholder",
     
     // Template Groups
-    "marketing": "Marketing",
-    "notification": "Thông báo",
-    "transactional": "Giao dịch",
-    "system": "Hệ thống",
-    "welcome": "Chào mừng",
-    
-    // Languages
-    "vietnamese": "Tiếng Việt",
-    "english": "Tiếng Anh",
-    
-    // Template Types
     "systemNotification": "Thông báo hệ thống",
     "birthday": "Chúc mừng sinh nhật",
     "emailConfirmation": "Xác nhận email",
     "customerAccepted": "Chấp nhận khách hàng",
     "passwordRecovery": "Khôi phục mật khẩu",
-    "welcomeEmail": "Email chào mừng",
-    "orderConfirmation": "Xác nhận đơn hàng",
-    "invoiceEmail": "Hóa đơn điện tử",
-    "promotionalEmail": "Email khuyến mãi",
-    "newsletterEmail": "Bản tin",
+    "welcome": "Chào mừng",
+    "marketing": "Marketing",
+    "transactional": "Giao dịch",
+    
+    // Languages
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh",
+    
+    // Channels
+    "email": "Email",
+    "sms": "SMS",
+    "pushNotification": "Push Notification",
+    "inApp": "Thông báo trong ứng dụng",
     
     // Actions
-    "addNewEmailTemplate": "Thêm mẫu email mới",
-    "editEmailTemplate": "Sửa mẫu email",
+    "addNewNotificationTemplate": "Thêm mẫu thông báo mới",
+    "editNotificationTemplate": "Sửa mẫu thông báo",
     "duplicateTemplate": "Nhân bản mẫu",
     "previewTemplate": "Xem trước mẫu",
     "testTemplate": "Gửi thử mẫu",
     "confirmDelete": "Xác nhận xóa",
-    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu email \"{name}\" không?",
+    "confirmDeleteMessage": "Bạn có chắc chắn muốn xóa mẫu thông báo \"{name}\" không?",
     
     // Status and states
     "active": "Đang hoạt động",
@@ -816,30 +813,32 @@ const vi = {
     "published": "Đã xuất bản",
     
     // Messages
-    "addSuccess": "Thêm mẫu email thành công",
-    "updateSuccess": "Cập nhật mẫu email thành công",
-    "deleteSuccess": "Xóa mẫu email thành công",
-    "duplicateSuccess": "Nhân bản mẫu email thành công",
-    "testEmailSent": "Gửi email thử nghiệm thành công",
-    "testEmailFailed": "Gửi email thử nghiệm thất bại",
+    "addSuccess": "Thêm mẫu thông báo thành công",
+    "updateSuccess": "Cập nhật mẫu thông báo thành công",
+    "deleteSuccess": "Xóa mẫu thông báo thành công",
+    "duplicateSuccess": "Nhân bản mẫu thông báo thành công",
+    "testNotificationSent": "Gửi thông báo thử nghiệm thành công",
+    "testNotificationFailed": "Gửi thông báo thử nghiệm thất bại",
     
     // Validation messages
     "pleaseEnterName": "Vui lòng nhập tên mẫu",
     "pleaseEnterDescription": "Vui lòng nhập mô tả",
-    "pleaseEnterSubject": "Vui lòng nhập tiêu đề email",
-    "pleaseEnterBodyTemplate": "Vui lòng nhập nội dung email",
+    "pleaseEnterSubject": "Vui lòng nhập tiêu đề",
+    "pleaseEnterContent": "Vui lòng nhập nội dung thông báo",
     "pleaseSelectTemplateGroup": "Vui lòng chọn nhóm mẫu",
     "pleaseSelectLanguage": "Vui lòng chọn ngôn ngữ",
-    "pleaseSelectTemplateType": "Vui lòng chọn loại mẫu",
+    "pleaseSelectChannel": "Vui lòng chọn kênh thông báo",
     "nameAlreadyExists": "Tên mẫu đã tồn tại",
-    "invalidEmailContent": "Nội dung email không hợp lệ",
+    "invalidContent": "Nội dung thông báo không hợp lệ",
     
     // Preview and test
     "previewMode": "Chế độ xem trước",
-    "testEmailTitle": "Gửi email thử nghiệm",
-    "testEmailDescription": "Nhập email để nhận mẫu thử nghiệm",
+    "testNotificationTitle": "Gửi thông báo thử nghiệm",
+    "testNotificationDescription": "Nhập thông tin người nhận để gửi mẫu thử nghiệm",
     "recipientEmail": "Email người nhận",
-    "sendTestEmail": "Gửi thử nghiệm",
+    "recipientPhone": "Số điện thoại người nhận",
+    "recipientUser": "Người dùng nhận",
+    "sendTest": "Gửi thử nghiệm",
     "sending": "Đang gửi...",
     
     // Template editor
@@ -853,7 +852,36 @@ const vi = {
     "totalTemplates": "Tổng số mẫu",
     "activeTemplates": "Mẫu đang hoạt động",
     "draftTemplates": "Mẫu nháp",
-    "mostUsedTemplate": "Mẫu được sử dụng nhiều nhất"
+    "mostUsedTemplate": "Mẫu được sử dụng nhiều nhất",
+    "emailTemplates": "Mẫu Email",
+    "smsTemplates": "Mẫu SMS",
+    "pushTemplates": "Mẫu Push",
+    "inAppTemplates": "Mẫu thông báo trong ứng dụng",
+    
+    // Channel specific
+    "emailSpecific": {
+        "subject": "Tiêu đề email",
+        "htmlContent": "Nội dung HTML",
+        "textContent": "Nội dung văn bản",
+        "attachments": "Tệp đính kèm"
+    },
+    "smsSpecific": {
+        "messageContent": "Nội dung tin nhắn",
+        "maxLength": "Tối đa 160 ký tự",
+        "unicodeSupport": "Hỗ trợ Unicode"
+    },
+    "pushSpecific": {
+        "title": "Tiêu đề Push",
+        "body": "Nội dung Push",
+        "icon": "URL biểu tượng",
+        "clickAction": "Hành động khi nhấn"
+    },
+    "inAppSpecific": {
+        "title": "Tiêu đề thông báo",
+        "message": "Nội dung thông báo",
+        "actionButtons": "Nút hành động",
+        "priority": "Độ ưu tiên"
+    }
   },
   "send_email": {
     "customer_list": "Danh sách khách hàng",
