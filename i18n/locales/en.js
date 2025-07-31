@@ -36,15 +36,15 @@ const en = {
       "10": "Permission Group Management",
       "11": "User-to-Branch Management",
       "12": "System Log Checking",
-      "13": "Email Template Management",
-      "14": "Email SMTP Configuration",
+      "13": "Notification Template Management",
+      "14": "Notification Sending Configuration",
       "15": "Send Email",
       "16": "Permission Configuration",
       "17": "Authorization",
       "18": "Order Management",
       "19": "Hotel Management",
       "20": "Configuration",
-      "21": "Email Management",
+      "21": "Notification Channel Management",
       "22": "Customer Management",
       "23": "Customer List",
       "24": "System Configuration"
@@ -79,7 +79,8 @@ const en = {
     "backToTop": "Back to Top",
     "scrollToTop": "Scroll to Top",
     "dataNotUpdated": "Using current data, some information may not be updated",
-    "notLoaded": "Not loaded"
+    "notLoaded": "Not loaded",
+    "create_cron": "Create Cron"
   },
   "sidebar": {
     "brandName": "Restaurant Software",
@@ -290,27 +291,27 @@ const en = {
 
     // Channel specific
     "emailSpecific": {
-        "subject": "Email Subject",
-        "htmlContent": "HTML Content",
-        "textContent": "Text Content",
-        "attachments": "Attachments"
+      "subject": "Email Subject",
+      "htmlContent": "HTML Content",
+      "textContent": "Text Content",
+      "attachments": "Attachments"
     },
     "smsSpecific": {
-        "messageContent": "SMS Message",
-        "maxLength": "Max 160 characters",
-        "unicodeSupport": "Unicode Support"
+      "messageContent": "SMS Message",
+      "maxLength": "Max 160 characters",
+      "unicodeSupport": "Unicode Support"
     },
     "pushSpecific": {
-        "title": "Push Title",
-        "body": "Push Body",
-        "icon": "Icon URL",
-        "clickAction": "Click Action"
+      "title": "Push Title",
+      "body": "Push Body",
+      "icon": "Icon URL",
+      "clickAction": "Click Action"
     },
     "inAppSpecific": {
-        "title": "In-App Title",
-        "message": "In-App Message",
-        "actionButtons": "Action Buttons",
-        "priority": "Priority"
+      "title": "In-App Title",
+      "message": "In-App Message",
+      "actionButtons": "Action Buttons",
+      "priority": "Priority"
     }
   },
 
@@ -352,7 +353,7 @@ const en = {
   "notificationConfig": {
     "title": "Notification Channel Configuration Management",
     "searchPlaceholder": "Search notification configurations...",
-    
+
     // Basic form labels
     "configName": "Configuration Name",
     "configNamePlaceholder": "e.g., Customer Notification Email",
@@ -434,37 +435,37 @@ const en = {
     // Channel types
     "channelEmail": "Email",
     "channelSms": "SMS",
-    
+
     // Help text
     "emailConfigHelp": "Configure SMTP settings for email notifications",
     "smsConfigHelp": "Configure SMS provider settings for SMS notifications",
     "defaultConfigHelp": "Mark as default configuration for this channel type",
-    
+
     // Status messages
     "configurationActive": "Active",
     "configurationInactive": "Inactive",
-    
+
     // Additional validation
     "configNameRequired": "Configuration name is required",
     "channelRequired": "Channel selection is required",
     "emailConfigurationRequired": "Email configuration is required for Email channel",
     "smsConfigurationRequired": "SMS configuration is required for SMS channel",
-    
+
     // Import/Export (if needed)
     "exportConfigurations": "Export Configurations",
     "importConfigurations": "Import Configurations",
-    
+
     // Bulk actions (if needed)
     "bulkDelete": "Bulk Delete",
     "selectAll": "Select All",
     "selectedItems": "{{count}} items selected",
-    
+
     // Error messages
     "errorLoadingData": "Error loading notification configurations",
     "errorSavingConfig": "Error saving configuration",
     "errorDeletingConfig": "Error deleting configuration",
     "errorSendingSample": "Error sending sample notification",
-    
+
     // Success confirmations
     "configSavedSuccessfully": "Configuration saved successfully",
     "configDeletedSuccessfully": "Configuration deleted successfully",
@@ -1034,7 +1035,10 @@ const en = {
     "channel": "Channel",
     "status": "Status",
     "taskType": "Task Type",
-    "channel_filter_label": "Send channel"
+    "channel_filter_label": "Send channel",
+    "task_type": "Task Type",
+    "tab_send_now": "Send Now",
+    "tab_create_cron": "Create Scheduled Cron"
   },
   "customer": {
     "title": "Customer List",

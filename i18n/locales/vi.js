@@ -34,15 +34,15 @@ const vi = {
       "10": "Quản lý nhóm quyền",
       "11": "Quản lý người dùng vào chi nhánh",
       "12": "Check log hệ thống",
-      "13": "Quản lý Template Email",
-      "14": "Cấu hình Email SMTP",
+      "13": "Quản lý mẫu thông báo",
+      "14": "Cấu hình gửi thông báo",
       "15": "Gửi Email",
       "16": "Cấu hình phân quyền",
       "17": "Phân quyền",
       "18": "Quản lý đặt món",
       "19": "Quản lý khách sạn",
       "20": "Cấu hình",
-      "21": "Quản lý gửi Email",
+      "21": "Quản lý kênh thông báo",
       "22": "Quản lý khách hàng",
       "23": "Danh sách khách hàng",
       "24": "Cấu hình hệ thống"
@@ -77,7 +77,8 @@ const vi = {
     "backToTop": "Lên đầu trang",
     "scrollToTop": "Cuộn lên đầu trang",
     "dataNotUpdated": "Sử dụng dữ liệu hiện tại, một số thông tin có thể chưa được cập nhật",
-    "notLoaded": "Chưa được tải"
+    "notLoaded": "Chưa được tải",
+    "create_cron": "Tạo Cron"
   },
   "sidebar": {
     "brandName": "Nhà Hàng SoftWare",
@@ -884,7 +885,7 @@ const vi = {
     }
   },
   "send_email": {
-    "customer_list": "Danh sách khách hàng",
+    "customer_list": "Khách hàng",
     "add": "Thêm",
     "add_new_customer": "Thêm khách hàng mới",
     "customer_name": "Tên khách hàng",
@@ -898,7 +899,7 @@ const vi = {
     "loading_customers": "Đang tải danh sách khách hàng...",
     "no_customers": "Không có khách hàng nào.",
     "unknown_dob": "Chưa rõ ngày sinh",
-    "template_email": "Template Email",
+    "template_email": "Mẫu Email",
     "select_admin_email": "Chọn email admin gửi đi",
     "select_template": "Chọn template",
     "loading_templates": "Đang tải templates...",
@@ -1028,7 +1029,10 @@ const vi = {
     "channel": "Kênh gửi",
     "status": "Trạng thái",
     "taskType": "Loại tác vụ",
-    "channel_filter_label": "Kênh gửi"
+    "channel_filter_label": "Kênh gửi",
+    "task_type": "Loại công việc",
+    "tab_send_now": "Gửi ngay",
+    "tab_create_cron": "Tạo lịch gửi định kỳ"
   },
   "customer": {
     "title": "Danh sách khách hàng",
